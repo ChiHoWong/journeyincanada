@@ -4,7 +4,7 @@ function changeLanguage() {
     // Define the URLs for the different language versions of your site
     const languageURLs = {
       'en': '../index.html', // English version
-      'zh': './Home Page/homePage-zh.html', // Chinese version
+      'zh': './Home page/homePage-zh.html', // Chinese version
       // Add more language URLs as needed
     };
     
