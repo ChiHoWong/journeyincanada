@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/utilis-style-sheets/modern-normalize.css" />
+    <link rel="stylesheet" href="/utilis-style-sheets/style.css" />
+    <link rel="stylesheet" href="/utilis-style-sheets/mobile-menu.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/header.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/nav.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/path.css">
+    <link rel="stylesheet" href="../style/hero-related-container.css">
+    <link rel="stylesheet" href="../style/hero.css">
+    <link rel="stylesheet" href="../style/related-post.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/utilis.css">
+    <title>住咩好? 多倫多租屋攻略</title>
+    <meta name="keywords" content="多倫多租屋攻略, 多倫多租樓注意事項, 多倫多租樓全過程, 
+    多倫多住咩好, 多倫多租樓推介">
+</head>
+<body>
+     <!-- header -->
+     <div class="sticky-container">
+        <header class="header container">
+            <a class="header-home" href="/Home page/homePage-en.html"> <h2 class="header__title">HOME</h2> </a>
+            <div class="header__btn-container">
+                <div class="header__language-selector">
+                    <select id="language" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="zh">繁體中文</option>
+                    </select>
+                  </div>
+                <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
+                        <path fill="#f78f8f"
+                            d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
+                        </path>
+                        <path fill="#c74343"
+                            d="M20.003,7c5.815,0,10.841,0.553,14.037,1.017c1.575,0.222,2.832,1.401,3.124,2.917 C37.523,12.97,38,16.126,38,19.976c-0.106,4.38-0.569,7.576-0.833,9.075c-0.295,1.532-1.552,2.71-3.136,2.934 C31.991,32.29,26.538,33,20.003,33c-6.121,0-11.42-0.637-14.037-1.017c-1.575-0.222-2.832-1.401-3.124-2.917 C2.503,27.147,2.1,24.016,2.1,20s0.403-7.147,0.738-9.051c0.295-1.532,1.552-2.71,3.136-2.934C8.015,7.71,13.467,7,20.003,7 M20.003,6C14.143,6,8.945,6.56,5.826,7.027C3.841,7.307,2.234,8.8,1.856,10.76C1.478,12.907,1.1,16.08,1.1,20 s0.378,7.093,0.756,9.24c0.378,1.96,1.985,3.453,3.97,3.733C9.039,33.44,14.237,34,20.003,34c5.86,0,11.058-0.56,14.177-1.027 c1.985-0.28,3.592-1.773,3.97-3.733C38.527,27.093,38.905,23.92,39,20c0-3.92-0.473-7.093-0.851-9.24 c-0.378-1.96-1.985-3.453-3.97-3.733C30.966,6.56,25.863,6,20.003,6L20.003,6z">
+                        </path>
+                        <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
+                    </svg>
+                </button>
+                <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 40 40">
+                        <path fill="#8585cc"
+                            d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z">
+                        </path>
+                        <path fill="#8d8dd8"
+                            d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z">
+                        </path>
+                        <path fill="#bd82f4"
+                            d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z">
+                        </path>
+                        <path fill="#ed73f4"
+                            d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z">
+                        </path>
+                        <path fill="#f97dcd"
+                            d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z">
+                        </path>
+                        <path fill="#fc9c95"
+                            d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z">
+                        </path>
+                        <path fill="#ffac99"
+                            d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z">
+                        </path>
+                        <path fill="#ffc49c"
+                            d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z">
+                        </path>
+                        <path fill="#ffde8d"
+                            d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z">
+                        </path>
+                        <path fill="#fff69f"
+                            d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z">
+                        </path>
+                        <path fill="#8b75a1"
+                            d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z">
+                        </path>
+                        <path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"></path>
+                        <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"></path>
+                        <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z">
+                        </path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                 
+                </button>
+            </div>
+        </header>
+        <nav class="nav__menu container">
+            <div class="nav__menu-left">
+                <div class="item-shopping">
+                    <img src="/utilis-images/shopping.jpg" alt="icon of shopping">
+                    <a href="#shopping">購</a>
+                </div>
+                <div class="item-food">
+                    <img src="/utilis-images/food.jpeg" alt="icon of food">
+                    <a href="#food">食</a>
+                </div>
+                <div class="item-accomodation">
+                    <img src="/utilis-images/accomodation.jpeg" alt="icon of accomodation">
+                    <a href="#accomodation">住</a>
+                </div>
+                <div class="item-transportation">
+                    <img src="/utilis-images/transportation.jpeg" alt="icon of transportation">
+                    <a href="#transportation">行</a>
+                </div>
+            </div>
+            <div class="nav__menu-right">
+                <div class="item-entertainment">
+                    <img src="/utilis-images/entertainment.jpeg" alt="icon of entertainment">
+                    <a href="#entertainment">樂</a>
+                </div>
+                <div class="item-work">
+                    <img src="/utilis-images/study&work.jpeg" alt="icon of study & work">
+                    <a href="#work">學習&工作</a>
+                </div>
+                <div class="item-saving">
+                    <img src="/utilis-images/saving.jpeg" alt="icon of saving">
+                    <a href="#saving">慳錢小貼士</a>
+                </div>
+                <div class="item-others">
+                    <img src="/utilis-images/others.jpeg" alt="icon of others">
+                    <a href="#others">其它</a>
+                </div>
+    
+            </div>
+        </nav>
+    </div>
+
+     <!-- mobile nav -->
+    <nav id="mobile-nav">
+        <ul class="mobile-nav__menu">
+            <li><a class="mobile-nav__link" href="#">購</a></li>
+            <li><a class="mobile-nav__link" href="#">食</a></li>
+            <li><a class="mobile-nav__link" href="#">住</a></li>
+            <li><a class="mobile-nav__link" href="#">行</a></li>
+            <li><a class="mobile-nav__link" href="#">樂</a></li>
+            <li><a class="mobile-nav__link" href="#">學習&工作</a></li>
+            <li><a class="mobile-nav__link" href="#">慳錢小貼士</a></li>
+            <li><a class="mobile-nav__link" href="#">其它</a></li>
+        </ul>
+    </nav>
+
+    <!-- path -->
+    <div class="path container">
+    <a href="/Home page/homePage-en.html">Home</a> > <a href="#category">住</a> 
+    > 住咩好？多倫多租屋攻略
+    </div>
+
+
+    <!-- title -->
+    <div class="hero-related-container container">
+    
+    <div>
+    <div class="heading-container">
+        <h1 class="hero__heading">住咩好？多倫多租屋攻略</h1>
+        <img class="hero__img" src="#photo" alt="">
+
+        <!-- table of content -->
+        <section class="table-of-content">
+            <div class="TOC-icon-heading-container">
+                <img class="TOC-icon" src="/utilis-images/leef.jpeg" alt="maple icon">
+                <h2 class="TOC-title">Table of Content</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="#intro" class="TOC-li">簡介</a>
+                </li>
+                <li>
+                    <a href="#options" class="TOC-li">普遍住屋選項</a>
+                </li>
+                <li>
+                    <a href="#comparison" class="TOC-li">比較住屋選項</a>
+                </li>
+                <li>
+                    <a href="#procedures" class="TOC-li">租condo step-by-step</a>
+                    <ul>
+                        <li><a href="#prepare" class="TOC-li">租屋前有咩要準備</a></li>
+                        <li><a href="#consider" class="TOC-li">租屋前有咩要考慮</a></li>
+                        <li><a href="#how-to-rent" class="TOC-li">點樣租&小貼士</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+
+    
+
+    <!-- intro -->
+    <main class="main-container container">
+    <section class="intro-container" id="intro">
+        <h2 class="intro__heading">簡介</h2>
+        <p>
+            以下我哋會簡單講下喺加拿大有啲咩住屋選擇，以及有咩分別。之後我哋會詳細分享我地租condo嘅步驟。
+            <br>到步嘅第一個月先租airbnb係一個唔錯嘅選擇，建議租到下一個月頭，因為通常啲盤都係月頭先available。
+        </p>
+    </section>
+
+    
+        <!-- article 1 -->
+    <article class="article1" id="options">
+        <h2 class="article1__heading">普遍住屋選項</h2>
+        <ol class="article1-ol">
+            <li><h3>學生宿舍</h3></li>
+            <li><h3>獨立屋House</h3></li>
+
+            <!-- table - Townhouse vs House -->
+            <li><h3>城市屋Townhouse</h3>
+                <div class="article1__options-TvsH">
+                <h4>Townhouse vs House</h4>
+                    <table class="article1__options-table-TvsH">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Townhouse</th>
+                                <th>House</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>樓宇設計</td>
+                                <td>2至3層</td>
+                                <td>隨心</td>
+                            </tr>
+                            <tr>
+                                <td>私隱</td>
+                                <td>同隔離屋黐埋一齊，私隱較低</td>
+                                <td>獨立屋，私隱較高</td>
+                            </tr>
+                            <tr>
+                                <td>面積</td>
+                                <td>比較細同比較窄</td>
+                                <td>比較大</td>
+                            </tr>
+                            <tr>
+                                <td>租金</td>
+                                <td>比較平
+                                    因為HOA 會負責外部維修 e.g 草坪 & 屋頂
+                                    <br>每個月要畀錢 HOA</td>
+                                <td>比較貴
+                                    因為業主要負責所有維修費用
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>自主權</td>
+                                <td>限制於HOA rules: 唔可以自行修改外部設計</td>
+                                <td>你想點就點</td>
+                            </tr>
+                            <tr>
+                                <td>康樂設備</td>
+                                <td>可能有gym room，泳池</td>
+                                <td>x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li><h3>Apartment</h3></li>
+
+            <!-- table - Aparment vs Condo -->
+            <li><h3>Condo</h3>
+                <div class="hero__options-AvsC">
+                <h4>Aparment vs Condo</h4>
+                <table class="hero__options-table-AvsC">
+                    <thead>
+                        <th></th>
+                        <th>Apartment</th>
+                        <th>Condo</th>
+                    </thead>
+                    <tbody>
+                        <td>擁有權</td>
+                        <td>一個業主擁有成棟樓</td>
+                        <td>每個單位可由唔同業主擁有</td>
+                    </tbody>
+                    <tbody>
+                        <td>維修</td>
+                        <td>直接聯絡維修部門</td>
+                        <td>先聯絡業主 → 由佢聯絡管理處 → 聯絡維修部門
+                            <br>→ 時間成本↑↑↑↑↑↑ 
+                            <br>→ 你唔會知幾時先嚟維修
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>租金</td>
+                        <td colspan="2">差唔多</td>
+                    </tbody>
+                    <tbody>
+                        <td>康樂設備</td>
+                        <td colspan="2">差唔多, condo可能豪華啲</td>
+                    </tbody>
+                    <tbody>
+                        <td>室內設計</td>
+                        <td colspan="2">唔畀更改</td>
+                    </tbody>
+                </table>
+                </div>
+            </li>
+            小貼士：新單位通常好多甩漏，如果聯絡業主之後，好多日都冇人嚟整，可以直接send mail俾管理處。
+            <li><h3>Airbnb</h3></li>
+        </ol>
+    </article>
+    
+    <!-- article 2 -->
+    <article class="article2" id="comparison">
+        <h2 class="article2-title">比較住屋選項</h2>
+        <table class="article2-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>租金</th>
+                    <th>傢俬 </th>
+                    <th>水電煤 
+                        <br>(water, heat, electricity)</th>
+                    <th>康樂設備</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>學生宿舍</td>
+                    <td>每間學校都唔同</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>獨立屋House</td>
+                    <td>$2400+ 
+                        <br>1 person $1xxx</td>
+                    <td>varies</td>
+                    <td>通常包曬
+                        <br>唔包電費
+                        <br>唔包WiFi
+                    </td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>城市屋Townhouse</td>
+                    <td>$2300+</td>
+                    <td>varies</td>
+                    <td>通常包曬
+                        <br>唔包電費
+                        <br>唔包WiFi
+                    </td>
+                    <td>maybe</td>
+                </tr>
+                <tr>
+                    <td>Apartment
+                        <br>(1 bedroom, 冇車位)
+                        </td>
+                    <td>Downtown:
+                        <br>$2300-2600</td>
+                    <td>maybe</td>
+                    <td>通常包曬
+                        <br>唔包WiFi</td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>Condo
+                        <br>(1 bedroom, 冇車位)
+                        </td>
+                    <td>Scarborough:
+                        $2100-2400
+                        <br>Etiobicoke:
+                        $2300-2500
+                        <br>North york:
+                        $2300-2500
+                        </td>
+                    <td>mostly X</td>
+                    <td>通常包曬
+                        <br>唔包電費
+                        <br>唔包WiFi
+                        </td>
+                    <td>V</td>
+                </tr>
+                <tr>
+                    <td>Airbnb
+                        <br>(1 bedroom, 冇車位)
+                    </td>
+                    <td>$2200-2600</td>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <!-- article 3 -->
+    <article class="article3" id="procedures">
+        <h2>租condo流程:</h2>
+        <div class="article3__prepare-container" id="prepare">
+            <h3>租之前有咩要準備？</h3>
+            <ul>
+                <li>本地電話號碼</li>
+                <li>本地銀行戶口</li>
+                <li>一年嘅租金</li>
+                <li>passport</li>
+                <li>study/work permits</li>
+                <li>letter of school acceptance</li>
+                <li>資產證明</li>
+            </ul>
+        </div>
+        <div class="article3__consider-container" id="consider">
+            <h3>租之前有咩要考慮？</h3>
+            <ul>
+                <li>地點 - 附近有冇交通工具 & 超市</li>
+                <li>包唔包車位</li>
+                <li>基本設備: 洗碗機, 焗爐,
+                微波爐, 雪櫃, 洗衣同乾衣機</li>
+                <li>預算
+                    <ul>
+                        <li>租金 
+                            <br>→ 最少一年租約
+                            <br>→ 要先畀第一年訂金; 
+                            過咗第一年, 就每個月俾
+                        </li>
+                        <li>水電煤 (水費 ~$60-70/month, 暖氣 ~$50-60/month,
+                                電費 ~$70-80/month)
+                        </li>
+                        <li>水電煤戶口setup費 $25 (one-time)</li>
+                        <li>租客保險 $30-40/month</li>
+                        <li>WiFi $60-80/month</li>
+                        <li>Key deposit $300-$500 (one time)</li>
+                        -> 唔見鎖匙就冇得攞番
+                    </ul>
+                </li>
+                <li>康樂設備 (gym room, swimming pool etc.)</li>
+                <li>俾唔俾養寵物/食煙</li>
+                <li>樓齡
+                    <ul>
+                        <li>新樓: 可能會有噪音，因為好多嘢都未起好</li>
+                        <li>舊樓: 多塵, 有啲嘢可能需要維修</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+            <h3 class="article3__how-container" id="how-to-rent">點樣租</h3>
+        <div class="how-website-container">
+            <h4>Suggeseted website:</h3>
+            <ul>
+                <li>Conda.ca (with agent)</li>
+                <li>Rentals.ca</li>
+                <li>Realtor.ca</li>
+            </ul>
+        </div>
+        <div class="how-steps-container">
+            <h4>步驟:</h3>
+            <ol>
+                <li><i class="steps-ol-heading">Save低所有想睇嘅樓</i></li>
+                <!-- 2. Contact agent to book a viewing -->
+                <li><i class="steps-ol-heading">通知agent想睇樓 (需要24小時前通知)</i>
+                    <br>*一定要睇樓, 風險: 
+                    <ul>
+                        <li>係咪所有設備都齊？冇爛？</li>
+                        <li>室內設計 (1 bedroom vs studio)</li>
+                        <li>乾唔乾淨 (for old-age building)</li>
+                        <li>燈光 (有啲位可能冇燈)</li>
+                    </ul>
+                </li>
+                <!-- 3. Make an offer -->
+                <li> <i class="steps-ol-heading">Make an offer</i>
+                    <ul>
+                        <li>要填一份 Rental Application Form 俾Agent to draft an offer 
+                            <br>(個人資料, 過去工作經驗 - 財政狀況, 
+                            俾個業主大概知道你可唔可信)</li>
+                        <li>Agent drafted an offer後，你要簽4份forms,
+                            <ol>
+                                <li>Agreement to lease (basic info)</li>
+                                <li>Confirmation of co-operation and Representation (listing brokerage)</li>
+                                <li>Schedule - Agreement to lease (**agreement)</li>
+                                <li>Residential Tenancy Agreement ($)</li>
+                            </ol>
+                            <br><p>Double check:</p>
+                            <ul>
+                                <li>個人資料, 過去工作經驗 </li>
+                                <li>租嘅單位地址, 租約幾長</li>
+                                <li>$$: 租金, 訂金, 水電煤, WiFi, 租客保險, Key deposit (邊啲係包嘅)</li>
+                                <li>Agreement: 業主同租客同意咗啲咩</li>
+                                <li>Brokerage: 啲租係每個月定每年俾業主</li>
+                            </ul>
+                            <br><p><strong>***一定要睇清楚份contract</strong></p>
+                            <ul>
+                                <li>有啲字眼可能同你同agent講嘅嘢有出入，
+                                    <br>因為有時agent係當刻畀唔到肯定嘅答案，所以之後有問題記得同agent double confirm。
+                                </li>
+                                <li>個agent可能會打錯字</li>
+                            </ul>
+                            <br><p><strong>*** 你簽咗份form = 就係有法律效力嘅contract (只要個業主都簽咗)</p></strong>
+                            <p>→ 唔好同時間make多過一個offer，因為唔同業主都接受你嘅offer，你就GG</p>
+                            <p>   
+                                <br><b>真實案例:</b> 我哋睇咗一間新樓，係未安裝好雪櫃，
+                                <br>但我哋都照簽咗約，因為個agent同我哋講我哋入住後嘅兩三日內點都會安裝好。
+                                <br>結果呢，個業主話保證唔到，而我哋就焗著要應承... 如果唔係就要打官司或者
+                                大家都同意取消張contract (但你要等一段時間refund)
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 4. Wait for Landlord accept your offer -->
+                <li> <i class="steps-ol-heading">等業主接受你嘅offer</i>
+                    <ul>
+                        <li>業主有24小時去考慮</li>
+                        <li>可能會reject你嘅offer, 因為佢哋可能有其它更好嘅offer。</li>
+                        <p><br><b>真實案例:</b> 個業主前一晚喺電話度口頭應承會租俾我哋，話大家都係香港人喺香港又住同一區好有緣，
+                            <br>點知呢, 第朝個agent打嚟話佢哋已經租咗畀其他人lol</p>
+                    </ul>
+                </li>
+                <!-- 5. Offer accepted -->
+                <li><i class="steps-ol-heading">Offer accepted</i>
+                    <ul>
+                        <li>業主簽documents </li>
+                        <li>業主可能有其他要求而修訂咗份contract, 所以要重睇一次同重新簽名。</li>
+                    </ul>
+                </li>
+                <!-- 6. Submit deposit within 24hours -->
+                <li><i class="steps-ol-heading">offer被接受24小時後要畀訂金</i>
+                    <p class="article3-different"><b>如果</b> 你嘅銀行 <b>不同於</b> the brokerage’s:
+                    <br>A) make a wire transfer ($15) (electronic $ transfer between banks)
+                    <br>b) get a Bank draft (~$10)</p>
+
+                    <br><p class="article3-same"><b>If</b> your bank is <b>same as</b> the brokerage’s
+                    <br>Go to your bank branch to make a Direct deposit ($0)
+                    <br>Rmb to ask for the deposit slip to take picture (the bank will keep it)</p>
+                </li>
+                <!-- 7. Offer Secured -->
+                <li><i class="steps-ol-heading">Offer Secured</i>
+                    <p>證明文件:
+                        <ol>
+                            <li>Final lease document (4 Forms signed combined)</li>
+                            <li>Brokerage receipt</li>
+                        </ol>
+                    </p>
+                </li>
+                <!-- 8. Before getting keys: -->
+                <li><i class="steps-ol-heading">喺攞鎖匙之前:</i>
+                    <ol>
+                        <li class="article3-8li">要畀業主Key Deposit
+                            <ul> 
+                                <li>E transfer with email</li>
+                                <li>screenshot transaction</li>
+                            </ul>
+                        </li>
+                        <li class="article3-8li">Set up Utilities account
+                            <ul><li>Download the confirmation pdf</li></ul>
+                        </li>
+                        <li>租客保險
+                            <p>Suggested insurance: Square one insurance</p>
+                            <ul>
+                                <li>因應自己需要去買幾多保額</li>
+                                <li> 
+                                最後要加同居嘅人嘅名 
+                                <br>(男女朋友可以當係屋企人，保費仲會平啲)
+                                </li>
+                                <li>Download the confirmation pdf</li> 
+                            </ul>
+                            <p>*send曬以上3份 confirmation documents to agent, agent will send to landlord and brokerage</p>
+                        </li>
+                        <li> 同Condo Management辦理入住手續
+                            <ul>
+                                <li>Registration Form</li>
+                                <li>Passport photos</li>
+                                <li>Final lease document</li>
+                            </ul>
+                        </li>
+                        <li> 約攞鎖匙嘅時間 (through your agent)</li>
+                        <li>裝WiFi
+                            <p>Suggested company: Bell</p>
+                            <ul>
+                                <li>Back to school offer: $60/month</li>
+                                <li>預約時間上門安裝</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <!-- 9. FIrst Day of Moving In, CHECK : -->
+                <li><i class="steps-ol-heading">入住當日，CHECK:</i>
+                    <ul>
+                        <li>所有設備有冇問題</li>
+                        <li>有冇嘢爛咗？</li>
+                        <li>牆身,天花板,地下,門有冇爛</li>
+                    </ul>
+                    <p>→ 如果有問題，即刻影相通知業主，避免要賠錢。</p>
+                </li>
+                <!-- 10. DONE -->
+                <li><i class="steps-ol-heading">DONE</i></li>
+            </ol>
+        </div>
+    </article>
+    </main>
+    </div>
+    
+    <!-- related post -->
+    <section class="related">
+        <div class="related__post">
+            <h3 class="related-title">Related Post</h3>
+            <div class="related__box-container">
+                <div class="related__box">
+                    <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                    <p class="related__box-description">Coming soon</p>
+                </div>
+                <div class="related__box">    
+                    <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                    <p class="related__box-description">Coming soon</p>
+                </div>
+                <div class="related__box">
+                    <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                    <p class="related__box-description">Coming soon</p>
+                </div>
+                <div class="related__box">
+                    <!-- <img src="" alt="" class="latest__box-img--5">pic</img> -->
+                    <p class="related__box-description">Coming soon</p>
+                </div>
+             </div>
+            <div class="about">
+            <h3 class="about-title">About Us</h2>   
+            <img class="about-icon" src="/utilis-images/icon-us.PNG" alt="">
+            <p class="about-description">Weclome to our page. We are a pair of young couple from Hong Kong.
+                Hope you find our website useful.
+            </p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

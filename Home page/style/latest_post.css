@@ -1,0 +1,136 @@
+/* Latest */
+.latest{
+    /* background-color: var(--clr-pale); */
+    color: var(--clr-coffee);
+    text-align: center;
+    border-top: 1px solid var(--clr-yellow);
+    font-size: var(--size-xl);
+}
+
+.latest__title{
+    font-size: inherit;
+    padding: var(--size-2xl);
+}
+
+.latest__box-container{
+    display: grid;
+    grid-template-areas: 
+    'post1 post2 post3'
+    'post4 post5 post6';
+    gap: var(--size-3xl);
+}
+
+.latest__box--1{
+    grid-area: post1;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest__box--2{
+    grid-area: post2;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest__box--3{
+    grid-area: post3;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest__box--4{
+    grid-area: post4;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest__box--5{
+    grid-area: post5;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest__box--6{
+    grid-area: post6;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest__box-title{
+    display: flex;
+    background-color: white;
+    padding: var(--size-xxs);
+}
+
+.latest__box-pic{
+
+}
+
+.latest__box-description{
+    border-top: 2px solid var(--clr-yellow);
+    height: 10rem;
+}
+
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+  
+/* lg */
+@media (max-width: 1024px) {
+    .latest__title{
+        padding: var(--size-xl);
+    }
+
+    .latest__box-container{
+        gap: var(--size-2xl);
+    }
+}
+  
+/* md */
+@media (max-width: 768px) {
+    .latest{
+        font-size: var(--size-lg);
+    }
+
+    .latest__title{
+        padding: var(--size-xl);
+    }
+
+    .latest__box-container{
+        grid-template-areas: 
+        'post1 post2'
+        'post3 post4'
+        'post5 post6';
+
+        gap: var(--size-xl);
+    }
+}
+  
+/* sm */
+@media (max-width: 640px) {
+    .latest__title{
+        padding: var(--size-base);
+    }
+
+    .latest__box-container{
+        grid-template-areas: 
+        'post1' 
+        'post2'
+        'post3' 
+        'post4'
+        'post5' 
+        'post6';
+    }
+}
+  
+/* xs */
+@media (max-width: 475px) {}

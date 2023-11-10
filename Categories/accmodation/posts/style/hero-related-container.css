@@ -1,0 +1,35 @@
+.hero-related-container{
+    display: flex;
+    color: var(--clr-coffee);
+    font-size: var(--size-xl);
+    margin-top: var(--size-xl);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+  
+/* lg */
+@media (max-width: 1024px) {
+    .hero-related-container{
+        display: inline;
+        font-size: var(--size-lg);
+        margin-top: var(--size-lg);
+    }
+}
+  
+/* md */
+@media (max-width: 768px) {}
+  
+/* sm */
+@media (max-width: 640px) {
+    .hero-related-container{
+        font-size: var(--size-base);
+        margin-top: var(--size-base);
+    }
+}
+  
+/* xs */
+@media (max-width: 475px) {}

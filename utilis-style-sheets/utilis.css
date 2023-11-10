@@ -1,0 +1,49 @@
+.container {
+    max-width: 1720px;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+  }
+
+
+
+/* 2xl */
+@media (max-width: 1720px) {
+    .container {
+      max-width: 1720px;
+    }
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1280p;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }

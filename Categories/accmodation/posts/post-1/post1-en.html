@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/utilis-style-sheets/modern-normalize.css" />
+    <link rel="stylesheet" href="/utilis-style-sheets/style.css" />
+    <link rel="stylesheet" href="/utilis-style-sheets/mobile-menu.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/header.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/nav.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/path.css">
+    <link rel="stylesheet" href="../style/hero-related-container.css">
+    <link rel="stylesheet" href="../style/hero.css">
+    <link rel="stylesheet" href="../style/related-post.css">
+    <link rel="stylesheet" href="/utilis-style-sheets/utilis.css">
+    <title>Document</title>
+    <meta name="keywords" content="how to rent in toronto, toronto renting guide, 
+    full process renting in toronto, renting condo in toronto, renting in toronto tips">
+</head>
+<body>
+     <!-- header -->
+     <div class="sticky-container">
+        <header class="header container">
+            <a class="header-home" href="/Home page/homePage-en.html"> <h2 class="header__title">HOME</h2> </a>
+            <div class="header__btn-container">
+                <div class="header__language-selector">
+                    <select id="language" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="zh">繁體中文</option>
+                    </select>
+                  </div>
+                <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
+                        <path fill="#f78f8f"
+                            d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
+                        </path>
+                        <path fill="#c74343"
+                            d="M20.003,7c5.815,0,10.841,0.553,14.037,1.017c1.575,0.222,2.832,1.401,3.124,2.917 C37.523,12.97,38,16.126,38,19.976c-0.106,4.38-0.569,7.576-0.833,9.075c-0.295,1.532-1.552,2.71-3.136,2.934 C31.991,32.29,26.538,33,20.003,33c-6.121,0-11.42-0.637-14.037-1.017c-1.575-0.222-2.832-1.401-3.124-2.917 C2.503,27.147,2.1,24.016,2.1,20s0.403-7.147,0.738-9.051c0.295-1.532,1.552-2.71,3.136-2.934C8.015,7.71,13.467,7,20.003,7 M20.003,6C14.143,6,8.945,6.56,5.826,7.027C3.841,7.307,2.234,8.8,1.856,10.76C1.478,12.907,1.1,16.08,1.1,20 s0.378,7.093,0.756,9.24c0.378,1.96,1.985,3.453,3.97,3.733C9.039,33.44,14.237,34,20.003,34c5.86,0,11.058-0.56,14.177-1.027 c1.985-0.28,3.592-1.773,3.97-3.733C38.527,27.093,38.905,23.92,39,20c0-3.92-0.473-7.093-0.851-9.24 c-0.378-1.96-1.985-3.453-3.97-3.733C30.966,6.56,25.863,6,20.003,6L20.003,6z">
+                        </path>
+                        <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
+                    </svg>
+                </button>
+                <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 40 40">
+                        <path fill="#8585cc"
+                            d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z">
+                        </path>
+                        <path fill="#8d8dd8"
+                            d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z">
+                        </path>
+                        <path fill="#bd82f4"
+                            d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z">
+                        </path>
+                        <path fill="#ed73f4"
+                            d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z">
+                        </path>
+                        <path fill="#f97dcd"
+                            d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z">
+                        </path>
+                        <path fill="#fc9c95"
+                            d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z">
+                        </path>
+                        <path fill="#ffac99"
+                            d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z">
+                        </path>
+                        <path fill="#ffc49c"
+                            d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z">
+                        </path>
+                        <path fill="#ffde8d"
+                            d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z">
+                        </path>
+                        <path fill="#fff69f"
+                            d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z">
+                        </path>
+                        <path fill="#8b75a1"
+                            d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z">
+                        </path>
+                        <path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"></path>
+                        <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"></path>
+                        <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z">
+                        </path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                 
+                </button>
+            </div>
+        </header>
+        <nav class="nav__menu container">
+            <div class="nav__menu-left">
+                <div class="item-shopping">
+                    <img src="/utilis-images/shopping.jpg" alt="icon of shopping">
+                    <a href="#shopping">Shopping</a>
+                </div>
+                <div class="item-food">
+                    <img src="/utilis-images/food.jpeg" alt="icon of food">
+                    <a href="#food">Food</a>
+                </div>
+                <div class="item-accomodation">
+                    <img src="/utilis-images/accomodation.jpeg" alt="icon of accomodation">
+                    <a href="#accomodation">Accomodation</a>
+                </div>
+                <div class="item-transportation">
+                    <img src="/utilis-images/transportation.jpeg" alt="icon of transportation">
+                    <a href="#transportation">Transportation</a>
+                </div>
+            </div>
+            <div class="nav__menu-right">
+                <div class="item-entertainment">
+                    <img src="/utilis-images/entertainment.jpeg" alt="icon of entertainment">
+                    <a href="#entertainment">Entertainment</a>
+                </div>
+                <div class="item-work">
+                    <img src="/utilis-images/study&work.jpeg" alt="icon of study & work">
+                    <a href="#work">Study Work</a>
+                </div>
+                <div class="item-saving">
+                    <img src="/utilis-images/saving.jpeg" alt="icon of saving">
+                    <a href="#saving">$Saving Tips</a>
+                </div>
+                <div class="item-others">
+                    <img src="/utilis-images/others.jpeg" alt="icon of others">
+                    <a href="#others">Others</a>
+                </div>
+    
+            </div>
+        </nav>
+    </div>
+
+     <!-- mobile nav -->
+    <nav id="mobile-nav">
+        <ul class="mobile-nav__menu">
+            <li><a class="mobile-nav__link" href="#">Shopping</a></li>
+            <li><a class="mobile-nav__link" href="#">Food</a></li>
+            <li><a class="mobile-nav__link" href="#">Accomodation</a></li>
+            <li><a class="mobile-nav__link" href="#">Transportation</a></li>
+            <li><a class="mobile-nav__link" href="#">Entertainment</a></li>
+            <li><a class="mobile-nav__link" href="#">Study Work</a></li>
+            <li><a class="mobile-nav__link" href="#">$Saving Tips</a></li>
+            <li><a class="mobile-nav__link" href="#">Others</a></li>
+        </ul>
+    </nav>
+
+    <!-- path -->
+    <div class="path container">
+    <a href="/Home page/homePage-en.html">Home</a> > <a href="#category">Category</a> 
+    > Where to live? Choose your Accomodation
+    </div>
+
+
+    <!-- title -->
+    <div class="hero-related-container container">
+        
+    <div class="hero-container">
+        <h1 class="hero__heading">Where to live? Choose your Accomodation</h1>
+        <img class="hero__img" src="#photo" alt="">
+
+        <!-- table of content -->
+        <section class="table-of-content">
+            <div class="TOC-icon-heading-container">
+                <img class="TOC-icon" src="/utilis-images/leef.jpeg" alt="maple icon">
+                <h2 class="TOC-title">Table of Content</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="#intro" class="TOC-li">Introduction</a>
+                </li>
+                <li>
+                    <a href="#options" class="TOC-li">Common accomodation options for newcomers</a>
+                </li>
+                <li>
+                    <a href="#comparison" class="TOC-li">Common accomodation Comparison</a>
+                </li>
+                <li>
+                    <a href="#procedures" class="TOC-li">Step-by-step Procedures</a>
+                    <ul>
+                        <li><a href="#prepare" class="TOC-li">What to prepare before renting</a></li>
+                        <li><a href="#consider" class="TOC-li">What to consider before renting</a></li>
+                        <li><a href="#how-to-rent" class="TOC-li">How to rent and tips</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- intro -->
+        <main class="main-container container">
+            <section class="intro-container" id="intro">
+                <h2 class="intro__heading">簡介</h2>
+                <p>
+                    以下我哋會簡單講下喺加拿大有啲咩住屋選擇，以及有咩分別。之後我哋會詳細分享我地租condo嘅步驟。
+                    <br>到步嘅第一個月先租airbnb係一個唔錯嘅選擇，建議租到下一個月頭，因為通常啲盤都係月頭先available。
+                </p>
+            </section>
+           
+        <!-- article 1 -->
+        <article class="article1" id="options">
+            <h2 class="article1__heading">Common accommodation options for newcomers</h2>
+            <ol class="article1-ol">
+                <li><h3>Student hall</h3></li>
+                <li><h3>House</h3></li>
+
+                <!-- table - Townhouse vs House -->
+                <li><h3>Townhouse</h3>
+                    <div class="article1__options-TvsH">
+                    <h4>Townhouse vs House</h4>
+                        <table class="article1__options-table-TvsH">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Townhouse</th>
+                                    <th>House</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Construction</td>
+                                    <td>Muti-level (2-3 floors)</td>
+                                    <td>Depends</td>
+                                </tr>
+                                <tr>
+                                    <td>Privacy</td>
+                                    <td>Less privacy, sides of house attached to neighbourhoods (shared walls)</td>
+                                    <td>More privacy, detached from neighborhood</td>
+                                </tr>
+                                <tr>
+                                    <td>Size</td>
+                                    <td>Smaller and narrower</td>
+                                    <td>Larger</td>
+                                </tr>
+                                <tr>
+                                    <td>Costs</td>
+                                    <td>Cheaper
+                                        as HOA will be responsible for some exterior maintenance e.g lawn & rooftop
+                                        <br>monthly fees to HOA</td>
+                                    <td>More expensive
+                                        as owner needs to be responsible for the maintenance and repair
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>Autonomy</td>
+                                    <td>abide by HOA rules: cannot make any change to & need approval for aesthetic decisions</td>
+                                    <td>can freely make decoration & aesthetics to your house</td>
+                                </tr>
+                                <tr>
+                                    <td>Amenities</td>
+                                    <td>maybe have shared gym, pool, clubhouse</td>
+                                    <td>x</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li><h3>Apartment</h3></li>
+
+                <!-- table - Aparment vs Condo -->
+                <li><h3>Condo</h3>
+                    <div class="hero__options-AvsC">
+                    <h4>Aparment vs Condo</h4>
+                    <table class="hero__options-table-AvsC">
+                        <thead>
+                            <th></th>
+                            <th>Apartment</th>
+                            <th>Condo</th>
+                        </thead>
+                        <tbody>
+                            <td>Ownership</td>
+                            <td>One Landlord for the whole apartment building</td>
+                            <td>One Owner for One condo unit</td>
+                        </tbody>
+                        <tbody>
+                            <td>Maintenance</td>
+                            <td>Direct contact the maintenance services </td>
+                            <td>contact owner → contact management company → contact maintenance services
+                                <br>→ time↑↑↑↑↑↑ 
+                                <br>→ you won’t know when the maintenance & repair can be done
+                            </td>
+                        </tbody>
+                        <tbody>
+                            <td>Cost</td>
+                            <td colspan="2">Similar</td>
+                        </tbody>
+                        <tbody>
+                            <td>Amenities</td>
+                            <td colspan="2">Similar, condo maybe more luxurious</td>
+                        </tbody>
+                        <tbody>
+                            <td>Aesthetics</td>
+                            <td colspan="2">No screws & nails</td>
+                        </tbody>
+                    </table>
+                    </div>
+                </li>
+                <li><h3>Airbnb</h3></li>
+            </ol>
+        </article>
+        
+        <!-- article 2 -->
+        <article class="article2" id="comparison">
+            <h2 class="article2-title">Common accomodation Comparison</h2>
+            <table class="article2-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Costs</th>
+                        <th>Funiture </th>
+                        <th>Utilities 
+                            <br>(water, heat, electricity)</th>
+                        <th>Amenities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Student Hall</td>
+                        <td>depends on each school</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>House </td>
+                        <td>$2400+ 
+                            <br>1 person $1xxx</td>
+                        <td>varies</td>
+                        <td>mostly exclude
+                            <br>X Electricity
+                            <br>X Internet
+                        </td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Townhouse</td>
+                        <td>$2300+</td>
+                        <td>varies</td>
+                        <td>mostly exclude
+                            <br>X Electricity
+                            <br>X Internet
+                        </td>
+                        <td>some V</td>
+                    </tr>
+                    <tr>
+                        <td>Apartment
+                            <br>(household 
+                            <br>size: 2 ppl, no car park)
+                            </td>
+                        <td>Downtown:
+                            <br>$2300-2600</td>
+                        <td>may have</td>
+                        <td>mostly exclude
+                            <br>X Internet</td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>Condo
+                            <br>(household 
+                            <br>size: 2 ppl, no carpark)
+                            </td>
+                        <td>Scarborough:
+                            $2100-2400
+                            <br>Etiobicoke:
+                            $2300-2500
+                            <br>North york:
+                            $2300-2500
+                            </td>
+                        <td>mostly X</td>
+                        <td>mostly exclude
+                            <br>X Electricity
+                            <br>X Internet
+                            </td>
+                        <td>V</td>
+                    </tr>
+                    <tr>
+                        <td>Airbnb
+                            <br>(household 
+                            <br>size: 2 ppl, no carpark)
+                        </td>
+                        <td>$2200-2600</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- article 3 -->
+        <article class="article3" id="procedures">
+            <h2>Step-by-step Procedures:</h2>
+
+            <!-- What to prepare before renting? -->
+            <div class="article3__prepare-container" id="prepare">
+                <h3>What to prepare before renting?</h3>
+                <ul>
+                    <li>local phone no</li>
+                    <li>local bank </li>
+                    <li>sufficient amount for at least 1 year rent</li>
+                    <li>passport</li>
+                    <li>study/work permits</li>
+                    <li>letter of school acceptance</li>
+                    <li>financial proof</li>
+                </ul>
+            </div>
+
+            <!-- What to consider before renting? -->
+            <div class="article3__consider-container" id="consider">
+                <h3>What to consider before renting?</h3>
+                <ul>
+                    <li>Location - Transportation & Groceries</li>
+                    <li>Parking</li>
+                    <li>Basic appliances: Dishwasher, oven,
+                    microwave, fridge, laundry suite(wash and dry)</li>
+                    <li>Budget
+                        <ul>
+                            <li>Rent 
+                                <br>→ at least 1 year tenancy period
+                                <br>→ 1-year rent deposit mostly for student; 
+                                After 1 year, rent is submitted every month instead
+                            </li>
+                            <li>Utilities fee (Water ~$60-70/month, Heating ~$50-60/month,
+                                 Hydro ~$70-80/month)
+                            </li>
+                            <li>Utilities account set-up fee $25 (one-time)</li>
+                            <li>Tenant insurance $30-40/month</li>
+                            <li>Internet $60-80/month</li>
+                            <li>Key deposit $300-$500 (one time)</li>
+                        </ul>
+                    </li>
+                    <li>Amenities (gym room, swimming pool etc.)</li>
+                    <li>Pet/ Smoking allowed?</li>
+                    <li>Age of Building
+                        <ul>
+                            <li>too new: amenities and some appliances may not be 
+                                available, construction noise</li>
+                            <li>too old: many dust, some appliances may require maintenance</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- How to rent -->
+            <div class="how-website-container">
+                <h3 class="article3__how-container" id="how-to-rent">How to rent</h3>
+                <h4>Suggeseted website:</h3>
+                <ul>
+                    <li>Conda.ca (with agent)</li>
+                    <li>Rentals.ca</li>
+                    <li>Realtor.ca</li>
+                </ul>
+            </div>
+            <div class="how-steps-container">
+                <h4>Steps:</h3>
+                <ol>
+                    <li><i class="steps-ol-heading">Save all buildings you want visit</i></li>
+                    <!-- 2. Contact agent to book a viewing -->
+                    <li><i class="steps-ol-heading">Contact agent to book a viewing (need 24hrs before to notice the current tenant)</i>
+                        <br>*Must book for viewing, risks: 
+                        <ul>
+                            <li>All appliances available? working?</li>
+                            <li>The layout of room (1 bedroom vs studio)</li>
+                            <li>The cleanliness (for old-age building)</li>
+                            <li>The lighting (maybe quite dark)</li>
+                        </ul>
+                    </li>
+                    <!-- 3. Make an offer -->
+                    <li> <i class="steps-ol-heading">Make an offer</i>
+                        <ul>
+                            <li>Fill in a Rental Application Form for the Agent to draft an offer 
+                                <br>(Personal information, Past working history- financial status, 
+                                let the landlord to have a picture of your credibility)</li>
+                            <li>Agent drafted an offer with 4 forms to let you sign,
+                                <ol>
+                                    <li>Agreement to lease (basic info)</li>
+                                    <li>Confirmation of co-operation and Representation (listing brokerage)</li>
+                                    <li>Schedule - Agreement to lease (**agreement)</li>
+                                    <li>Residential Tenancy Agreement ($)</li>
+                                </ol>
+                                <br><p>Double check:</p>
+                                <ul>
+                                    <li>Personal info, working history </li>
+                                    <li>Rent Address, Tenancy period</li>
+                                    <li>$$: Rent, Deposit, Utilities, Internet, Tenant insurance, Key deposit (which are included)</li>
+                                    <li>Agreement: landlord & tenant agree xxx</li>
+                                    <li>Brokerage: release rent to the landlord every month? or every year?</li>
+                                </ul>
+                                <br><p><strong>***Please read through the contract</strong></p>
+                                <ul>
+                                    <li>Some wordings in contract may different from what you've discussed with the agent
+                                        <br>because the agent usually say things briefly, so please ask the agent if anything uncertain.
+                                    </li>
+                                    <li>The agent might have typos.</li>
+                                </ul>
+                                <br><p><strong>*** The forms you have signed = A Legal contract (once the landlord accepted)</p></strong>
+                                <p>→ Don't make more than 1 offer at the same time, so think it carefully before making an offer</p>
+                                <p>   
+                                    <br><b>Real experience:</b> We've visited a very new condo which the unit didn't install the fridge yet.
+                                    <br>We still signed the contract and paid the rent since the agent said it must be installed within 2-3 days after we checked in.
+                                    <br>However, the landload said it's not guaranteed, so we just have to accepted it... Otherwise we have to go to 
+                                    the law or achieve mutual consent to cancel the contract (also have to wait for refund).
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 4. Wait for Landlord accept your offer -->
+                    <li> <i class="steps-ol-heading">Wait for Landlord accept your offer</i>
+                        <ul>
+                            <li>Landlord have 24 hours to consider</li>
+                            <li>May reject your offer, because they may receive some other offers, the landlord would chose among them</li>
+                            <p><br><b>Real experience:</b> The Landload verbally agreed to rent the unit to us on the phone since we're both from Hong Kong.
+                                <br>However, they suddenly rejected us in the another morning without any reasons lol.  </p>
+                        </ul>
+                    </li>
+                    <!-- 5. Offer accepted -->
+                    <li><i class="steps-ol-heading">Offer accepted</i>
+                        <ul>
+                            <li>Landlord signed the documents </li>
+                            <li>May have some additional statements by the landlord, read the whole contract carefully again & resign again</li>
+                        </ul>
+                    </li>
+                    <!-- 6. Submit deposit within 24hours -->
+                    <li><i class="steps-ol-heading">Submit deposit within 24hours after offer accepted</i>
+                        <p class="article3-different"><b>If</b> your bank is <b>different from</b> the brokerage’s:
+                        <br>A) make a wire transfer ($15) (electronic $ transfer between banks)
+                        <br>b) get a Bank draft (~$10)</p>
+
+                        <br><p class="article3-same"><b>If</b> your bank is <b>same as</b> the brokerage’s
+                        <br>Go to your bank branch to make a Direct deposit ($0)
+                        <br>Rmb to ask for the deposit slip to take picture (the bank will keep it)</p>
+                    </li>
+                    <!-- 7. Offer Secured -->
+                    <li><i class="steps-ol-heading">Offer Secured</i>
+                        <p>proof:
+                            <ol>
+                                <li>Final lease document (4 Forms signed combined)</li>
+                                <li>Brokerage receipt</li>
+                            </ol>
+                        </p>
+                    </li>
+                    <!-- 8. Before getting keys: -->
+                    <li><i class="steps-ol-heading">Before getting keys:</i>
+                        <ol>
+                            <li class="article3-8li">Pay Key Deposit to Landlord
+                                <ul> 
+                                    <li>E transfer with email</li>
+                                    <li>screenshot transaction</li>
+                                </ul>
+                            </li>
+                            <li class="article3-8li">Set up Utilities account
+                                <ul><li>Download the confirmation pdf</li></ul>
+                            </li>
+                            <li>Tenant Insurance
+                                <p>Suggested insurance: Square one insurance</p>
+                                <ul>
+                                   <li>Depends on your needs to choose how much to be covered</li>
+                                   <li> 
+                                    Add your together-living friends/family name at last few steps 
+                                    <br>(bf/gf/friend is identified as family member when you are filling in the box of who will you live with)
+                                    </li>
+                                   <li>Download the confirmation pdf</li> 
+                                </ul>
+                                <p>*Send the above 3 confirmation documents to agent, agent will send to landlord and brokerage</p>
+                            </li>
+                            <li> Registration & Move-in elevator booking with the Condo Management
+                                <ul>
+                                    <li>Registration Form</li>
+                                    <li>Passport photos </li>
+                                    <li>Final lease document</li>
+                                </ul>
+                            </li>
+                            <li> Date with landlord and management company for the Key pickup time (through your agent)</li>
+                            <li>Set up Internet
+                                <p>Suggested company: Bell</p>
+                                <ul>
+                                    <li>Back to school offer: $60/month</li>
+                                    <li>make a booking for setting up home internet</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <!-- 9. FIrst Day of Moving In, CHECK : -->
+                    <li><i class="steps-ol-heading">First Day of Moving In, CHECK:</i>
+                        <ul>
+                            <li>all appliances working or not</li>
+                            <li>anythings broken?</li>
+                            <li>any damage to floor, walls, doors, ceiling?</li>
+                        </ul>
+                        <p>→ take pictures and report to the landlord immediately to protect yourself from compensation</p>
+                    </li>
+                    <!-- 10. DONE -->
+                    <li><i class="steps-ol-heading">DONE</i></li>
+                </ol>
+            </div>
+        </article>
+    </main>
+    </div>
+
+        <!-- related post -->
+    <section class="related">
+        <div class="related__box-container">
+            <h3 class="related-title">Related Post</h3>
+            <div class="related__box--1">
+                <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                <p class="related__box-description">Coming soon</p>
+            </div>
+            <div class="related__box--2">    
+                <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                <p class="related__box-description">Coming soon</p>
+            </div>
+            <div class="related__box--3">
+                <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                <p class="related__box-description">Coming soon</p>
+            </div>
+            <div class="related__box--4">
+                <!-- <img src="" alt="" class="latest__box-img--5">pic</img> -->
+                <p class="related__box-description">Coming soon</p>
+            </div>
+            <div class="about">
+            <h3 class="about-title">About Us</h2>   
+            <img class="about-icon" src="/utilis-images/icon-us.PNG" alt="">
+            <p class="about-description">Weclome to our page. We are a pair of young couple from Hong Kong.
+                Hope you find our website useful.
+            </p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>

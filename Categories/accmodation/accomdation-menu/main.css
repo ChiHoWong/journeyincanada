@@ -1,0 +1,134 @@
+.category-container{
+    text-align: center;
+}
+
+.title-line-container{
+    position: relative;
+}
+
+.category-title{
+    position: absolute;
+    font-size: var(--size-4xl);
+    color: var(--clr-coffee);
+    background-color: var(--clr-orange);
+    max-width: 20rem;
+    border-radius: 10rem;
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: var(--size-xxs);
+    z-index: 1;
+}
+
+.horizontal-line{
+    width: 100%;
+    height: var(--size-2xl);
+    background-color: var(--clr-peach);
+    margin-top: var(--size-5xl);
+}
+
+.category-boxs-container{
+    position: relative;
+    display: flex;
+    gap: var(--size-3xl);
+    overflow: hidden;
+    border-top: 5px solid var(--clr-orange);
+    border-bottom: 5px solid var(--clr-orange);
+    margin: var(--size-4xl);
+}
+
+.category-box{
+    flex: 1;
+    padding: var(--size-3xl) 0;
+    font-size: var(--size-2xl);
+}
+
+.category-box-img{
+    height: 22rem;
+    width: 25rem;
+    border: 2px solid var(--clr-yellow);
+}
+
+.category-box-description{
+    height: 18rem;
+    width: 25rem;
+    border: 2px solid var(--clr-yellow);
+}
+
+.arrow-button{
+    position: fixed;  
+    width: var(--size-4xl);
+    top: 50%;
+}
+
+.arrow-left{
+    left: 0;
+}
+
+.arrow-right{
+    right: 0;
+}
+
+.arrow-button:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {
+    .category-title{
+        font-size: var(--size-3xl);
+    }
+
+    .category-boxs-container{
+        gap: var(--size-2xl);
+    }
+
+    .category-box-img{
+        height: 20rem;
+        width: 22rem;
+    }
+
+    .category-box-description{
+        height: 16rem;
+        width: 22rem;
+    }
+}
+  
+/* lg */
+@media (max-width: 1024px) {
+
+}
+  
+/* md */
+@media (max-width: 768px) {
+    .category-title{
+        font-size: var(--size-2xl);
+    }
+
+    .horizontal-line{
+        height: var(--size-xl);
+    }
+
+    .category-boxs-container{
+        gap: var(--size-xl);
+    }
+
+    .category-box-img{
+        height: 18rem;
+        width: 20rem;
+    }
+
+    .category-box-description{
+        height: 14rem;
+        width: 20rem;
+    }
+}
+  
+/* sm */
+@media (max-width: 640px) {}
+  
+/* xs */
+@media (max-width: 475px) {}
