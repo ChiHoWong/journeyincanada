@@ -1,6 +1,6 @@
 /* footer */
 .footer{
-    background-image: url(/utilis-images/footer_background.jpg);
+    background-image: url(../utilis-images/footer_background.jpg);
     background-size: cover;
     background-position: center bottom -50px;
     display: flex;
