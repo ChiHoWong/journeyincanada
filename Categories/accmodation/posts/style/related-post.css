@@ -73,10 +73,22 @@
   display: flex;
   gap: var(--size-sm);
   }
+
+  .related{
+    padding-right: 0;
+  }
 }
   
 /* sm */
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+  .related{
+    font-size: var(--size-base);
+  }
+}
   
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+  .related{
+    font-size: var(--size-sm);
+  }
+}
