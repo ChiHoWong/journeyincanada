@@ -1,3 +1,7 @@
+.body {
+  overflow-x: hidden;
+}
+
 .hero-container{
   flex: 1;
   padding: 0 var(--size-xl);
@@ -5,8 +9,8 @@
 
 .hero__img{
   margin: var(--size-base) 0;
-  height: 30vh;
-  width: 50vw;
+  height: 40vh;
+  width: 60vw;
   border: 2px solid var(--clr-yellow);
 }
 
@@ -126,6 +130,11 @@ li {
   
 /* lg */
 @media (max-width: 1024px) {
+  .hero__img{
+    height: 40vh;
+    width: 80vw;
+  }
+
   .intro-container{
     font-size: var(--size-xl);
   }
@@ -157,6 +166,14 @@ li {
   
 /* sm */
 @media (max-width: 640px) {
+  .hero__heading{
+    font-size: var(--size-2xl)
+  }
+
+  .TOC-title{
+    font-size: var(--size-base)
+  }
+  
   .intro-container{
     font-size: var(--size-base);
   }
@@ -184,6 +201,14 @@ li {
   
 /* xs */
 @media (max-width: 475px) {
+  .hero__heading{
+    font-size: var(--size-xl)
+  }
+
+  .TOC-title{
+    font-size: var(--size-xs)
+  }
+
   .th, td{
     padding: 0.3rem;
     max-width: 40ch;
