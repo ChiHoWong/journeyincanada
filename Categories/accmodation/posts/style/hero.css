@@ -4,61 +4,52 @@
 
 .hero-container{
   flex: 1;
-  padding: 0 var(--size-xl);
+  margin: 0 var(--size-2xl);
+  max-width: 120ch;
 }
 
-.hero__img{
-  margin: var(--size-base) 0;
-  height: 40vh;
-  width: 60vw;
-  border: 2px solid var(--clr-yellow);
+.heading{
+  color: darkblue;
+  text-decoration: underline;
+  margin-bottom: var(--size-sm);
 }
 
-.heading-container{
-  margin-left: var(--size-base)
+.highlight{
+  display: inline-block;
+  background-color: var(--clr-pale);
 }
 
-.TOC-li{
-  font-size: var(--size-2xl);
+.highlight-blue{
+  display: inline-block;
+  background-color: rgba(144, 206, 225, 0.5);
 }
 
-.main-container{
-  font-size: var(--size-xl);
+.highlight-green{
+  display: inline-block;
+  background-color: aquamarine;
 }
 
-.intro-container{
-  margin-top: var(--size-base);
-  font-size: var(--size-2xl);
+.article-img{
+  width: 30rem;
+  margin-bottom: var(--size-base);
+}
+
+.table-heading-x{
+  background-color: var(--clr-pale);
+}
+
+.table-heading-y{
+  background-color: lightblue;
 }
 
 /* options */
 .options{
   margin-top: var(--size-base);
-  font-size: var(--size-2xl);
-}
-
-
-.table-of-content{
-    border: 2px solid silver;
-    padding: var(--size-4xl);
-    display: inline-block;
-    margin: var(--size-base) 0;
-}
-
-.TOC-icon-heading-container{
-    display: flex;
-    gap: var(--size-xxs);
-    align-items: center;
-    padding: var(--size-xxs);
-    background-color: var(--clr-silver);
-    border-radius: 30rem 50rem 25rem 60rem;
-}
-
-.TOC-icon{
-  width: var(--size-4xl);
+  font-size: var(--size-lg);
 }
 
 table{
+  margin-top: var(--size-xxs);
   border: 2px solid black;
   border-collapse: collapse;
 }
@@ -76,7 +67,7 @@ li {
 /* Comparison */
 .Comparison{
   margin-top: var(--size-base);
-  font-size: var(--size-2xl);
+  font-size: var(--size-lg);
 }
 
 .Comparison-title{
@@ -90,7 +81,7 @@ li {
 /* procedures */
 .procedures{
   margin-top: var(--size-3xl);
-  font-size: var(--size-2xl);
+  font-size: var(--size-lg);
 }
 
 .procedures__prepare-container{
@@ -130,60 +121,30 @@ li {
   
 /* lg */
 @media (max-width: 1024px) {
-  .hero__img{
-    height: 40vh;
-    width: 80vw;
-  }
-
-  .intro-container{
-    font-size: var(--size-xl);
-  }
-
-  .TOC-li{
-    font-size: var(--size-xl);
-  }
-  
-  .main-container{
-    font-size: var(--size-lg);
-  }
-
   .options{
-    font-size: var(--size-xl);
+    font-size: var(--size-base);
   }
 
   .Comparison{
-    font-size: var(--size-xl);
+    font-size: var(--size-base);
 }
 
   .procedures{
-    font-size: var(--size-xl);
+    font-size: var(--size-base);
   }
 }
   
 /* md */
 @media (max-width: 768px) {
+  li {
+    margin-top: var(--size-xs);
+  }
 }
   
 /* sm */
 @media (max-width: 640px) {
   .hero__heading{
     font-size: var(--size-2xl)
-  }
-
-  .TOC-title{
-    font-size: var(--size-base)
-  }
-  
-  .intro-container{
-    font-size: var(--size-base);
-  }
-
-  .TOC-li{
-    font-size: var(--size-base);
-  }
-  
-  .main-container{
-    font-size: var(--size-sm);
   }
 
   .options{
@@ -201,12 +162,12 @@ li {
   
 /* xs */
 @media (max-width: 475px) {
-  .hero__heading{
-    font-size: var(--size-xl)
+  li {
+    margin-top: var(--size-xxs);
   }
 
-  .TOC-title{
-    font-size: var(--size-xs)
+  .hero__heading{
+    font-size: var(--size-xl)
   }
 
   .th, td{
@@ -217,16 +178,8 @@ li {
   ul, ol {
     padding-left: var(--size-sm);
   }
-
-  .intro-container{
-    font-size: var(--size-sm);
-  }
-
-  .TOC-li{
-    font-size: var(--size-sm);
-  }
   
-  .main-container{
+  .article-container{
     font-size: var(--size-xs);
   }
 

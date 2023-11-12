@@ -1,0 +1,46 @@
+.Rent-BA-container{
+    margin-top: var(--size-base);
+    font-size: var(--size-lg);
+}
+
+.popular-areas-container{
+    margin-top: var(--size-base);
+    font-size: var(--size-lg);
+}
+
+
+
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+  
+/* lg */
+@media (max-width: 1024px) {
+    .Rent-BA-container{
+        font-size: var(--size-base);
+    }
+    
+    .popular-areas-container{
+        font-size: var(--size-base);
+    }
+}
+  
+/* md */
+@media (max-width: 768px) {}
+  
+/* sm */
+@media (max-width: 640px) {}
+  
+/* xs */
+@media (max-width: 475px) {
+    .Rent-BA-container{
+        font-size: var(--size-sm);
+    }
+    
+    .popular-areas-container{
+        font-size: var(--size-sm);
+    }
+}

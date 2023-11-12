@@ -1,6 +1,6 @@
 .related{
-  padding-right: var(--size-lg);
-  font-size: var(--size-2xl);
+  padding-right: var(--size-base);
+  margin-left: auto;
 }
 
 .related-title{
@@ -21,7 +21,12 @@
 
 .related__box{
   border: 2px solid var(--clr-yellow);
-  height: 5rem;
+  height: 15rem;
+  width: 20rem;
+}
+
+.related__box-description{
+  text-align: center;
 }
 
 .about{
@@ -55,35 +60,40 @@
 @media (max-width: 1280px) {
   .related{
     padding-right: var(--size-base);
-    font-size: var(--size-xl);
   }
+
+  .related__box{
+    height: 10rem;
+    width: 15rem;
+}
 }
   
 /* lg */
 @media (max-width: 1024px) {
-  .related{
-    padding-right: var(--size-sm);
-    font-size: var(--size-lg);
+  .related__box{
+    width: 13rem;
   }
 }
   
 /* md */
 @media (max-width: 768px) {
   .related__box-container{
-  display: flex;
-  gap: var(--size-sm);
-  }
+    gap: var(--size-sm);
+    }
 
   .related{
-    padding-right: 0;
+    padding-right: var(--size-sm);
+    margin: auto
   }
+
+  .related__box{
+    display: inline-block;
+    width: 100%;
+}
 }
   
 /* sm */
 @media (max-width: 640px) {
-  .related{
-    font-size: var(--size-base);
-  }
 }
   
 /* xs */
