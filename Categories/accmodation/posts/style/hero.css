@@ -21,19 +21,19 @@
 
 .highlight{
   display: inline-block;
-  background-color: var(--clr-pale);
+  background-color: var(--clr-orange);
   font-weight: bold;
 }
 
 .highlight-blue{
   font-weight: bold;
   display: inline-block;
-  background-color: rgba(144, 206, 225, 0.5);
+  background-color: var(--clr-highlight-blue);
 }
 
 .highlight-green{
   display: inline-block;
-  background-color: aquamarine;
+  background-color: var(--clr-highlight-green);
 }
 
 .article-img{
@@ -42,11 +42,11 @@
 }
 
 .table-heading-x{
-  background-color: var(--clr-pale);
+  background-color: var(--clr-table-orange);
 }
 
 .table-heading-y{
-  background-color: lightblue;
+  background-color: var(--clr-table-blue);
 }
 
 /* options */

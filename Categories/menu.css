@@ -44,7 +44,7 @@
 }
 
 .category-box-img{
-    height: 22rem;
+    height: 18rem;
     width: 25rem;
     border: 2px solid var(--clr-yellow);
 }
@@ -87,12 +87,13 @@
     }
 
     .category-box-img{
-        height: 20rem;
+        height: 11rem;
         width: 22rem;
     }
 
     .category-box-description{
-        height: 16rem;
+        padding: var(--size-sm);
+        height: 14rem;
         width: 22rem;
     }
 }
@@ -114,16 +115,6 @@
 
     .category-boxs-container{
         gap: var(--size-xl);
-    }
-
-    .category-box-img{
-        height: 18rem;
-        width: 20rem;
-    }
-
-    .category-box-description{
-        height: 14rem;
-        width: 20rem;
     }
 }
   
