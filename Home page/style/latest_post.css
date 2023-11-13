@@ -142,7 +142,11 @@ a:hover{
         'post4'
         'post5' 
         'post6';
+
+        grid-template-columns: none;
     }
+
+    
 }
   
 /* xs */
