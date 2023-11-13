@@ -125,6 +125,7 @@ a:hover{
         'post5 post6';
 
         gap: var(--size-xl);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
   
