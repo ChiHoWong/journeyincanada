@@ -3,8 +3,8 @@ function changeLanguage() {
     
     // Define the URLs for the different language versions of your site
     const languageURLs = {
-      'en': './accomodation-menu-en.html', // English version
-      'zh': './accomodation-menu-zh.html', // Chinese version
+      'en': './$saving-menu-en.html', // English version
+      'zh': './$saving-menu-zh.html', // Chinese version
       // Add more language URLs as needed
     };
     

@@ -22,11 +22,18 @@
     --clr-light: #f1f5f9;
     --clr-pale: #f9ecca;
     --clr-amber: #ffcc66c8;
-    --clr-coffee: rgb(116, 33, 0);
+    --clr-coffee: #621c00;
     --clr-yellow: #fad12d5e;
     --clr-silver: rgb(216, 210, 210);
     --clr-peach: #ff8888;
     --clr-orange: rgb(254, 215, 170, 0.7);
+    --clr-heading-blue: #0b5394;
+    --clr-highlight-blue: #c9f8f5;
+    --clr-highlight-orange: #fff2cc;
+    --clr-highlight-green: #d5ffd4;
+    --clr-table-orange: #fff2cc;
+    --clr-table-blue: #cfe2f3;
+
 
     /* sizes */
     --size-xxs: 0.5rem;

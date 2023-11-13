@@ -8,18 +8,25 @@
   max-width: 120ch;
 }
 
+.article-container{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .heading{
-  color: darkblue;
+  font-family: 'Prata', serif;;
+  color: var(--clr-heading-blue);
   text-decoration: underline;
-  margin-bottom: var(--size-sm);
+  margin: var(--size-sm) 0;
 }
 
 .highlight{
   display: inline-block;
   background-color: var(--clr-pale);
+  font-weight: bold;
 }
 
 .highlight-blue{
+  font-weight: bold;
   display: inline-block;
   background-color: rgba(144, 206, 225, 0.5);
 }
@@ -31,7 +38,7 @@
 
 .article-img{
   width: 30rem;
-  margin-bottom: var(--size-base);
+  margin-bottom: var(--size-lg);
 }
 
 .table-heading-x{
@@ -101,11 +108,11 @@ li {
 }
 
 .how-steps-container{
-  margin-top: var(--size-xxs);
+  margin-top: var(--size-lg);
 }
 
 .steps-ol-heading{
-  font-weight: bold;
+  margin-bottom: var(--size-xl);;
 }
 
 .procedures-different{

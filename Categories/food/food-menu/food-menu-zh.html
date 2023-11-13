@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../utilis-style-sheets/modern-normalize.css" />
+    <link rel="stylesheet" href="../../../utilis-style-sheets/style.css" />
+    <link rel="stylesheet" href="../../../utilis-style-sheets/mobile-menu.css">
+    <link rel="stylesheet" href="../../../utilis-style-sheets/header.css">
+    <link rel="stylesheet" href="../../../utilis-style-sheets/nav.css">
+    <link rel="stylesheet" href="../../../utilis-style-sheets/path.css">
+    <link rel="stylesheet" href="../../menu.css">
+    <link rel="stylesheet" href="../../../utilis-style-sheets/footer.css">
+    <link rel="stylesheet" href="../../../utilis-style-sheets/utilis.css">
+    <title>食</title>
+</head>
+<body><!DOCTYPE html>
+    <html lang="zh-HK">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../utilis-style-sheets/modern-normalize.css" />
+        <link rel="stylesheet" href="../../../utilis-style-sheets/style.css" />
+        <link rel="stylesheet" href="../../../utilis-style-sheets/mobile-menu.css">
+        <link rel="stylesheet" href="../../../utilis-style-sheets/header.css">
+        <link rel="stylesheet" href="../../../utilis-style-sheets/nav.css">
+        <link rel="stylesheet" href="../../../utilis-style-sheets/path.css">
+        <link rel="stylesheet" href="../../menu.css">
+        <link rel="stylesheet" href="../../../utilis-style-sheets/footer.css">
+        <link rel="stylesheet" href="../../../utilis-style-sheets/utilis.css">
+        <title>行</title>
+    </head>
+    <body>
+            <!-- header -->
+            <div class="sticky-container">
+            <header class="header container">
+                <a class="header-home" href="../../../Home page/homePage-zh.html"> <h2 class="header__title">HOME</h2> </a>
+                <div class="header__btn-container">
+                    <div class="header__language-selector">
+                        <select id="language" onchange="changeLanguage()">
+                            <option value="zh">繁體中文</option>
+                            <option value="en">English</option>
+                        </select>
+                        </div>
+                    <button class="header__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
+                            <path fill="#f78f8f"
+                                d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
+                            </path>
+                            <path fill="#c74343"
+                                d="M20.003,7c5.815,0,10.841,0.553,14.037,1.017c1.575,0.222,2.832,1.401,3.124,2.917 C37.523,12.97,38,16.126,38,19.976c-0.106,4.38-0.569,7.576-0.833,9.075c-0.295,1.532-1.552,2.71-3.136,2.934 C31.991,32.29,26.538,33,20.003,33c-6.121,0-11.42-0.637-14.037-1.017c-1.575-0.222-2.832-1.401-3.124-2.917 C2.503,27.147,2.1,24.016,2.1,20s0.403-7.147,0.738-9.051c0.295-1.532,1.552-2.71,3.136-2.934C8.015,7.71,13.467,7,20.003,7 M20.003,6C14.143,6,8.945,6.56,5.826,7.027C3.841,7.307,2.234,8.8,1.856,10.76C1.478,12.907,1.1,16.08,1.1,20 s0.378,7.093,0.756,9.24c0.378,1.96,1.985,3.453,3.97,3.733C9.039,33.44,14.237,34,20.003,34c5.86,0,11.058-0.56,14.177-1.027 c1.985-0.28,3.592-1.773,3.97-3.733C38.527,27.093,38.905,23.92,39,20c0-3.92-0.473-7.093-0.851-9.24 c-0.378-1.96-1.985-3.453-3.97-3.733C30.966,6.56,25.863,6,20.003,6L20.003,6z">
+                            </path>
+                            <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
+                        </svg>
+                    </button>
+                    <button class="header__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 40 40">
+                            <path fill="#8585cc"
+                                d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z">
+                            </path>
+                            <path fill="#8d8dd8"
+                                d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z">
+                            </path>
+                            <path fill="#bd82f4"
+                                d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z">
+                            </path>
+                            <path fill="#ed73f4"
+                                d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z">
+                            </path>
+                            <path fill="#f97dcd"
+                                d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z">
+                            </path>
+                            <path fill="#fc9c95"
+                                d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z">
+                            </path>
+                            <path fill="#ffac99"
+                                d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z">
+                            </path>
+                            <path fill="#ffc49c"
+                                d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z">
+                            </path>
+                            <path fill="#ffde8d"
+                                d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z">
+                            </path>
+                            <path fill="#fff69f"
+                                d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z">
+                            </path>
+                            <path fill="#8b75a1"
+                                d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z">
+                            </path>
+                            <path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"></path>
+                            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                                d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"></path>
+                            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                                d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>                 
+                    </button>
+                </div>
+            </header>
+    
+             <!-- navigation bar -->
+            <nav class="nav__menu container">
+                <div class="nav__menu-left">
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/shopping.jpg" alt="icon of shopping">
+                        <a href="../../shopping/shopping-menu/shopping-menu-zh.html">購</a>
+                    </div>
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/food.jpeg" alt="icon of food">
+                        <a href="../../food/food-menu/food-menu-zh.html">食</a>
+                    </div>
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/accomodation.jpeg" alt="icon of accommodation">
+                        <a href="../../accmodation/accomdation-menu/accomodation-menu-zh.html">住</a>
+                    </div>
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/transportation.jpeg" alt="icon of transportation">
+                        <a href="../../transportation/transportation-menu/transportation-menu-zh.html">行</a>
+                    </div>
+                </div>
+                <div class="nav__menu-right">
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/entertainment.jpeg" alt="icon of entertainment">
+                        <a href="../../entertainment/entertainment-menu/entertainment-menu-zh.html">樂</a>
+                    </div>
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/study&work.jpeg" alt="icon of study & work">
+                        <a href="../../study & work/study&work-menu/study&work-zh.html">學習&工作</a>
+                    </div>
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/saving.jpeg" alt="icon of saving">
+                        <a href="../../$saving tips/$saving-menu/$saving-menu-zh.html">慳錢小貼士</a>
+                    </div>
+                    <div class="nav__item">
+                        <img src="../../../utilis-images/others.jpeg" alt="icon of others">
+                        <a href="../../others/others-menu/other-menu-zh.html">其它</a>
+                    </div>
+        
+                </div>
+            </nav>
+        </div>
+    
+            <!-- mobile nav -->
+            <nav id="mobile-nav">
+                <ul class="mobile-nav__menu">
+                    <h2>Categories</h2>
+                    <div class="line"></div>
+                    <li><a class="mobile-nav__link" href="#">購</a></li>
+                    <li><a class="mobile-nav__link" href="#">食</a></li>
+                    <li><a class="mobile-nav__link" href="#">住</a></li>
+                    <li><a class="mobile-nav__link" href="#">行</a></li>
+                    <li><a class="mobile-nav__link" href="#">樂</a></li>
+                    <li><a class="mobile-nav__link" href="#">學習&工作</a></li>
+                    <li><a class="mobile-nav__link" href="#">慳錢小貼士</a></li>
+                    <li><a class="mobile-nav__link" href="#">其它</a></li>
+                </ul>
+            </nav>
+    
+        <!-- path -->
+        <div class="path">
+        <a href="../../../index.html">主頁</a> > <a href="#category">食</a>
+        </div>
+    
+        <!-- search for & pic -->
+        <!-- <section class="intro-container">
+            <div>
+                <h2>Search for...</h2>
+                <p></p>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </section> -->
+    
+        <!-- categories -->
+        <section class="category-container">
+        <div class="title-line-container">
+            <h1 class="category-title">食</h1>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="category-boxs-container">
+            <!-- arrow left button -->
+            <button class="arrow-button arrow-left">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>                  
+            </button>
+            <button class="arrow-button arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>                                   
+            </button>
+            
+            <!-- category-boxs -->
+            <div class="category-box">
+                <!-- <img src="" alt=""> -->
+                <!-- <a href="../posts/post-1/post1-zh.html"> -->
+                <p class="category-box-img">Coming soon</p>
+                <p class="category-box-description">Coming soon</p></a>
+            </div>
+            <div class="category-box">
+                <!-- <img src="" alt=""> -->
+                <p class="category-box-img">Coming soon</p>
+                <p class="category-box-description">Coming soon</p>
+            </div>
+            <div class="category-box">
+                <!-- <img src="" alt=""> -->
+                <p class="category-box-img">Coming soon</p>
+                <p class="category-box-description">Coming soon</p>
+            </div>
+            <div class="category-box">
+                <!-- <img src="" alt=""> -->
+                <p class="category-box-img">Coming soon</p>
+                <p class="category-box-description">Coming soon</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                
+        </div>
+        </section>
+    
+             <!-- Footer -->
+        <section class="footer container">
+            <div class="footer__img-container">
+                <img src="../../../utilis-images/logo.png" alt="logo" class="footer__logo">
+            </div>
+            <h3 class="footer__description">Hope you find our website useful <br> 
+                We love to know more about each of you who living in here</h3>
+            <div class="footer__contact">
+                <h2 class="footer__contact-title">CONTACT US</h2>
+                <div class="footer__contact-info-container">
+                    <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    <p>gmail</p>
+                </div>
+                <div class="footer__contact-info-container">
+                    <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
+                    style="fill:#FFFFFF;">
+                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                    </svg> 
+                    <p>ig</p> 
+                </div>
+            </div>
+         </section>
+    
+    <script src="../../menu.js"></script>
+    <script src="../../../utlilis.js"></script>
+    </body>
+    </html>
+        <!-- header -->
+        <div class="sticky-container">
+        <header class="header container">
+            <a class="header-home" href="../../../Home page/homePage-zh.html"> <h2 class="header__title">HOME</h2> </a>
+            <div class="header__btn-container">
+                <div class="header__language-selector">
+                    <select id="language" onchange="changeLanguage()">
+                        <option value="zh">繁體中文</option>
+                        <option value="en">English</option>
+                    </select>
+                    </div>
+                <!-- <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
+                        <path fill="#f78f8f"
+                            d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
+                        </path>
+                        <path fill="#c74343"
+                            d="M20.003,7c5.815,0,10.841,0.553,14.037,1.017c1.575,0.222,2.832,1.401,3.124,2.917 C37.523,12.97,38,16.126,38,19.976c-0.106,4.38-0.569,7.576-0.833,9.075c-0.295,1.532-1.552,2.71-3.136,2.934 C31.991,32.29,26.538,33,20.003,33c-6.121,0-11.42-0.637-14.037-1.017c-1.575-0.222-2.832-1.401-3.124-2.917 C2.503,27.147,2.1,24.016,2.1,20s0.403-7.147,0.738-9.051c0.295-1.532,1.552-2.71,3.136-2.934C8.015,7.71,13.467,7,20.003,7 M20.003,6C14.143,6,8.945,6.56,5.826,7.027C3.841,7.307,2.234,8.8,1.856,10.76C1.478,12.907,1.1,16.08,1.1,20 s0.378,7.093,0.756,9.24c0.378,1.96,1.985,3.453,3.97,3.733C9.039,33.44,14.237,34,20.003,34c5.86,0,11.058-0.56,14.177-1.027 c1.985-0.28,3.592-1.773,3.97-3.733C38.527,27.093,38.905,23.92,39,20c0-3.92-0.473-7.093-0.851-9.24 c-0.378-1.96-1.985-3.453-3.97-3.733C30.966,6.56,25.863,6,20.003,6L20.003,6z">
+                        </path>
+                        <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
+                    </svg>
+                </button> -->
+                <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 40 40">
+                        <path fill="#8585cc"
+                            d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z">
+                        </path>
+                        <path fill="#8d8dd8"
+                            d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z">
+                        </path>
+                        <path fill="#bd82f4"
+                            d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z">
+                        </path>
+                        <path fill="#ed73f4"
+                            d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z">
+                        </path>
+                        <path fill="#f97dcd"
+                            d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z">
+                        </path>
+                        <path fill="#fc9c95"
+                            d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z">
+                        </path>
+                        <path fill="#ffac99"
+                            d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z">
+                        </path>
+                        <path fill="#ffc49c"
+                            d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z">
+                        </path>
+                        <path fill="#ffde8d"
+                            d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z">
+                        </path>
+                        <path fill="#fff69f"
+                            d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z">
+                        </path>
+                        <path fill="#8b75a1"
+                            d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z">
+                        </path>
+                        <path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"></path>
+                        <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"></path>
+                        <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z">
+                        </path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                 
+                </button>
+            </div>
+        </header>
+
+         <!-- navigation bar -->
+         <nav class="nav__menu container">
+            <div class="nav__menu-left">
+                <div class="nav__item">
+                    <img src="../../../utilis-images/shopping.jpg" alt="icon of shopping">
+                    <a href="../../shopping/shopping-menu/shopping-menu-zh.html">購</a>
+                </div>
+                <div class="nav__item">
+                    <img src="../../../utilis-images/food.jpeg" alt="icon of food">
+                    <a href="../../food/food-menu/food-menu-zh.html">食</a>
+                </div>
+                <div class="nav__item">
+                    <img src="../../../utilis-images/accomodation.jpeg" alt="icon of accommodation">
+                    <a href="../../accmodation/accomdation-menu/accomodation-menu-zh.html">住</a>
+                </div>
+                <div class="nav__item">
+                    <img src="../../../utilis-images/transportation.jpeg" alt="icon of transportation">
+                    <a href="../../transportation/transportation-menu/transportation-menu-zh.html">行</a>
+                </div>
+            </div>
+            <div class="nav__menu-right">
+                <div class="nav__item">
+                    <img src="../../../utilis-images/entertainment.jpeg" alt="icon of entertainment">
+                    <a href="../../entertainment/entertainment-menu/entertainment-menu-zh.html">樂</a>
+                </div>
+                <div class="nav__item">
+                    <img src="../../../utilis-images/study&work.jpeg" alt="icon of study & work">
+                    <a href="../../study & work/study&work-menu/study&work-menu-zh.html">學習&工作</a>
+                </div>
+                <div class="nav__item">
+                    <img src="../../../utilis-images/saving.jpeg" alt="icon of saving">
+                    <a href="../../$saving tips/$saving-menu/$saving-menu-zh.html">慳錢小貼士</a>
+                </div>
+                <div class="nav__item">
+                    <img src="../../../utilis-images/others.jpeg" alt="icon of others">
+                    <a href="../../others/others-menu/others-menu-zh.html">其它</a>
+                </div>
+    
+            </div>
+        </nav>
+    </div>
+
+    <!-- mobile nav -->
+    <nav id="mobile-nav">
+        <ul class="mobile-nav__menu">
+            <h2>Categories</h2>
+            <div class="line"></div>
+            <li><a class="mobile-nav__link" href="../../shopping/shopping-menu/shopping-menu-zh.html">購</a></li>
+            <li><a class="mobile-nav__link" href="../../food/food-menu/food-menu-zh.html">食</a></li>
+            <li><a class="mobile-nav__link" href="../../accmodation/accomdation-menu/accomodation-menu-zh.html">住</a></li>
+            <li><a class="mobile-nav__link" href="../../transportation/transportation-menu/transportation-menu-zh.html">行</a></li>
+            <li><a class="mobile-nav__link" href="../../entertainment/entertainment-menu/entertainment-menu-zh.html">樂</a></li>
+            <li><a class="mobile-nav__link" href="../../study & work/study&work-menu/study&work-menu-zh.html">學習&工作</a></li>
+            <li><a class="mobile-nav__link" href="../../$saving tips/$saving-menu/$saving-menu-zh.html">慳錢小貼士</a></li>
+            <li><a class="mobile-nav__link" href="../../others/others-menu/others-menu-zh.html">其它</a></li>
+        </ul>
+    </nav>
+
+    <!-- path -->
+    <div class="path">
+    <a href="../../../index.html">主頁</a> > <a href="#category">食</a>
+    </div>
+
+    <!-- search for & pic -->
+    <!-- <section class="intro-container">
+        <div>
+            <h2>Search for...</h2>
+            <p></p>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+    </section> -->
+
+    <!-- categories -->
+    <section class="category-container">
+    <div class="title-line-container">
+        <h1 class="category-title">食</h1>
+        <div class="horizontal-line"></div>
+    </div>
+    <div class="category-boxs-container">
+        <!-- arrow left button -->
+        <button class="arrow-button arrow-left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>                  
+        </button>
+        <button class="arrow-button arrow-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>                                   
+        </button>
+        
+        <!-- category-boxs -->
+        <div class="category-box">
+            <!-- <img src="" alt=""> -->
+            <!-- <a href="../posts/post-1/post1-zh.html"> -->
+            <p class="category-box-img">Coming soon</p>
+            <p class="category-box-description">Coming soon</p></a>
+        </div>
+        <div class="category-box">
+            <!-- <img src="" alt=""> -->
+            <p class="category-box-img">Coming soon</p>
+            <p class="category-box-description">Coming soon</p>
+        </div>
+        <div class="category-box">
+            <!-- <img src="" alt=""> -->
+            <p class="category-box-img">Coming soon</p>
+            <p class="category-box-description">Coming soon</p>
+        </div>
+        <div class="category-box">
+            <!-- <img src="" alt=""> -->
+            <p class="category-box-img">Coming soon</p>
+            <p class="category-box-description">Coming soon</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+            
+    </div>
+    </section>
+
+         <!-- Footer -->
+    <section class="footer container">
+        <div class="footer__img-container">
+            <img src="../../../utilis-images/logo.png" alt="logo" class="footer__logo">
+        </div>
+        <h3 class="footer__description">Hope you find our website useful <br> 
+            We love to know more about each of you who living in here</h3>
+        <div class="footer__contact">
+            <h2 class="footer__contact-title">CONTACT US</h2>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <p>gmail</p>
+            </div>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
+                style="fill:#FFFFFF;">
+                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                </svg> 
+                <p>ig</p> 
+            </div>
+        </div>
+     </section>
+     
+<script src="./main.js"></script>
+<script src="../../menu.js"></script>
+<script src="../../../utlilis.js"></script>
+</body>
+</html>

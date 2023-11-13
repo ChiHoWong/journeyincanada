@@ -18,6 +18,24 @@
     'post1 post2 post3'
     'post4 post5 post6';
     gap: var(--size-3xl);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.latest__box-title{
+    color: var(--clr-coffee);
+    border-bottom: 2px solid var(--clr-yellow);
+}
+
+.latest__box-img{
+    width: 100%;
+}
+
+a{
+    transition: opacity 0.3s ease;
+}
+
+a:hover{
+    opacity: 0.8;
 }
 
 .latest__box--1{
@@ -68,12 +86,7 @@
     padding: var(--size-xxs);
 }
 
-.latest__box-pic{
-
-}
-
 .latest__box-description{
-    border-top: 2px solid var(--clr-yellow);
     height: 10rem;
 }
 

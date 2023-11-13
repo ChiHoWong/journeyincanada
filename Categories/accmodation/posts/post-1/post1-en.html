@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Prata&display=swap" rel="stylesheet">
     <!-- stylesheets -->
     <link rel="stylesheet" href="../../../../utilis-style-sheets/modern-normalize.css" />
     <link rel="stylesheet" href="../../../../utilis-style-sheets/style.css" />
@@ -15,10 +19,13 @@
     <link rel="stylesheet" href="../style/RentBA+Popular.css">
     <link rel="stylesheet" href="../style/hero.css">
     <link rel="stylesheet" href="../style/related-post.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/footer.css">
     <link rel="stylesheet" href="../../../../utilis-style-sheets/utilis.css">
-    <title>Where to live in Toronto? Choose your Accomodation</title>
+    <meta name="description" content="We are a pair of HK young couple travelling to Toronto for study and immigration. 
+    We’d like to share our experiences and tips for living here - saving your money and time!🌎💼">
     <meta name="keywords" content="how to rent in toronto, toronto renting guide, 
     full process renting in toronto, renting condo in toronto, renting in toronto tips">
+    <title>Where to live in Toronto? Choose your accommodation</title>
 </head>
 <body>
      <!-- header -->
@@ -32,7 +39,7 @@
                         <option value="zh">繁體中文</option>
                     </select>
                   </div>
-                <button class="header__btn">
+                <!-- <button class="header__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
                         <path fill="#f78f8f"
                             d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
@@ -42,7 +49,7 @@
                         </path>
                         <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
                     </svg>
-                </button>
+                </button> -->
                 <button class="header__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 40 40">
                         <path fill="#8585cc"
@@ -93,66 +100,70 @@
                 </button>
             </div>
         </header>
+        
+        <!-- navigation bar -->
         <nav class="nav__menu container">
             <div class="nav__menu-left">
-                <div class="item-shopping">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/shopping.jpg" alt="icon of shopping">
-                    <a href="#shopping">Shopping</a>
+                    <a href="../../../shopping/shopping-menu/shopping-menu-en.html">Shopping</a>
                 </div>
-                <div class="item-food">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/food.jpeg" alt="icon of food">
-                    <a href="#food">Food</a>
+                    <a href="../../../food/food-menu/food-menu-en.html">Food</a>
                 </div>
-                <div class="item-accomodation">
-                    <img src="../../../../utilis-images/accomodation.jpeg" alt="icon of accomodation">
-                    <a href="#accomodation">Accomodation</a>
+                <div class="nav__item">
+                    <img src="../../../../utilis-images/accomodation.jpeg" alt="icon of accommodation">
+                    <a href="../../../accmodation/accomdation-menu/accomdation-menu-en.html">accommodation</a>
                 </div>
-                <div class="item-transportation">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/transportation.jpeg" alt="icon of transportation">
-                    <a href="#transportation">Transportation</a>
+                    <a href="../../../transportation/transportation-menu/transportation-menu-en.html">Transportation</a>
                 </div>
             </div>
             <div class="nav__menu-right">
-                <div class="item-entertainment">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/entertainment.jpeg" alt="icon of entertainment">
-                    <a href="#entertainment">Entertainment</a>
+                    <a href="../../../entertainment/entertainment-menu/entertainment-menu-en.html">Entertainment</a>
                 </div>
-                <div class="item-work">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/study&work.jpeg" alt="icon of study & work">
-                    <a href="#work">Study Work</a>
+                    <a href="../../../study & work/study&work-menu/study&work-menu-en.html">Study Work</a>
                 </div>
-                <div class="item-saving">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/saving.jpeg" alt="icon of saving">
-                    <a href="#saving">$Saving Tips</a>
+                    <a href="../../../$saving tips/$saving-menu/$saving-menu-en.html">$Saving Tips</a>
                 </div>
-                <div class="item-others">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/others.jpeg" alt="icon of others">
-                    <a href="#others">Others</a>
+                    <a href="../../../others/others-menu/others-menu-en.html">Others</a>
                 </div>
     
             </div>
         </nav>
     </div>
 
-     <!-- mobile nav -->
-    <nav id="mobile-nav">
-        <ul class="mobile-nav__menu">
-            <li><a class="mobile-nav__link" href="#">Shopping</a></li>
-            <li><a class="mobile-nav__link" href="#">Food</a></li>
-            <li><a class="mobile-nav__link" href="#">Accomodation</a></li>
-            <li><a class="mobile-nav__link" href="#">Transportation</a></li>
-            <li><a class="mobile-nav__link" href="#">Entertainment</a></li>
-            <li><a class="mobile-nav__link" href="#">Study Work</a></li>
-            <li><a class="mobile-nav__link" href="#">$Saving Tips</a></li>
-            <li><a class="mobile-nav__link" href="#">Others</a></li>
-        </ul>
-    </nav>
+        <!-- mobile nav -->
+        <nav id="mobile-nav">
+            <ul class="mobile-nav__menu">
+                <h2>Categories</h2>
+                <div class="line"></div>
+                <li><a class="mobile-nav__link" href="../../../shopping/shopping-menu/shopping-menu-en.html">Shopping</a></li>
+                <li><a class="mobile-nav__link" href="../../../food/food-menu/food-menu-en.html">Food</a></li>
+                <li><a class="mobile-nav__link" href="../../../accmodation/accomdation-menu/accomdation-menu-en.html">accommodation</a></li>
+                <li><a class="mobile-nav__link" href="../../../transportation/transportation-menu/transportation-menu-en.html">Transportation</a></li>
+                <li><a class="mobile-nav__link" href="../../../entertainment/entertainment-menu/entertainment-menu-en.html">Entertainment</a></li>
+                <li><a class="mobile-nav__link" href="../../../study & work/study&work-menu/study&work-menu-en.html">Study Work</a></li>
+                <li><a class="mobile-nav__link" href="../../../$saving tips/$saving-menu/$saving-menu-en.html">$Saving Tips</a></li>
+                <li><a class="mobile-nav__link" href="../../../others/others-menu/others-menu-en.html">Others</a></li>
+            </ul>
+        </nav>
 
     <!-- path -->
     <div class="path container">
     <a href="../../../../index.html">Home</a> > 
     <a href="../../../accmodation/accomdation-menu/accomdation-menu-en.html">Category</a> 
-    > Where to live in Toronto? Choose your Accomodation
+    > Where to live in Toronto? Choose your accommodation
     </div>
 
 
@@ -160,7 +171,7 @@
     <div class="hero-related-container container">
         
     <div class="hero-container">
-        <h1 class="hero__heading">Where to live in Toronto? Choose your Accomodation</h1>
+        <h1 class="hero__heading">Where to live in Toronto? Choose your accommodation</h1>
         <img class="heading__img" src="../images/heading_img.jpg" alt="image of this article">
 
         <!-- table of content -->
@@ -380,9 +391,9 @@
             </ol>
         </section>
         
-        <!-- Common accomodation Comparison -->
+        <!-- Common accommodation Comparison -->
         <section class="Comparison" id="comparison">
-            <h2 class="heading">Common accomodation Comparison</h2>
+            <h2 class="heading">Common accommodation Comparison</h2>
             <table class="Comparison-table">
                 <thead>
                     <tr>
@@ -483,7 +494,6 @@
                     <li>Parking</li>
                     <li>Basic appliances: dishwasher, oven,
                     microwave, fridge, laundry suite(wash and dry)</li>
-                    <br>
                     <li>Budget
                         <ul>
                             <li>Rent 
@@ -508,7 +518,6 @@
                             </li>
                         </ul>
                     </li>
-                    <br>
                     <li>Amenities (gym room, swimming pool etc.)</li>
                     <li>Pet/ Smoking allowed?</li>
                     <li>Age of Building
@@ -539,20 +548,19 @@
             <!-- How to rent -->
             <div class="how-website-container">
                 <h3 class="procedures__how-container heading" id="how-to-rent">C. How to rent?</h3>
-                <h4>Suggeseted website:</h3>
+                <h4><u>Suggeseted website:</u></h4>
                 <ul>
-                    <li>Conda.ca (with agent)</li>
-                    <li>Rentals.ca</li>
-                    <li>Realtor.ca (with an agent) - 
-                        <br>under Canadian Real Estate Association (CREA)</li>
+                    <li><b class="highlight-blue">Conda.ca</b> (with an agent)</li>
+                    <li><b class="highlight-blue">Rentals.ca</b></li>
+                    <li><b class="highlight-blue">Realtor.ca</b> (with an agent) - under Canadian Real Estate Association (CREA)</li>
                 </ul>
             </div>
             <div class="how-steps-container">
                 <h4><u>Steps:</u></h4>
                 <ol>
-                    <li><i class="steps-ol-heading highlight">Save all buildings you want visit</i></li>
+                    <li class="steps-ol-heading"><i class=" highlight">Save all buildings you want visit</i></li>
                     <!-- 2. Contact agent to book a viewing -->
-                    <li><i class="steps-ol-heading highlight">Contact agent to book a viewing (need 24hrs before to notice the current tenant)</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Contact agent to book a viewing (need 24hrs before to notice the current tenant)</i>
                         <br>*Must book for viewing, risks: 
                         <ul>
                             <li>All appliances available? working?</li>
@@ -562,7 +570,7 @@
                         </ul>
                     </li>
                     <!-- 3. Make an offer -->
-                    <li> <i class="steps-ol-heading highlight">Make an offer</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Make an offer</i>
                         <ul>
                             <li>Fill in a Rental Application Form for the Agent to draft an offer</li> 
                                 <ul>
@@ -583,8 +591,7 @@
                                         <br>&nbsp;&nbsp;mainly about the rent $ details</li>
                                 </ul>
                             
-                            <br>💡Tips:
-                            <li>
+                            <li>💡Tips:
                                 Once you have signed the Forms and your landlord accepted your offer, The Forms = LEGAL contract 
                             </li>
                                 <ul>
@@ -617,7 +624,7 @@
                         </ul>
                     </li>
                     <!-- 4. Wait for Landlord accept your offer -->
-                    <li> <i class="steps-ol-heading highlight">Wait for Landlord accept your offer</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Wait for Landlord accept your offer</i>
                         <ul>
                             <li>Landlord have 24 hours to consider</li>
                             <li>May reject your offer, because they may receive some other offers, the landlord would chose among them</li>
@@ -627,14 +634,14 @@
                         </ul>
                     </li>
                     <!-- 5. Offer accepted -->
-                    <li><i class="steps-ol-heading highlight">Offer accepted</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Offer accepted</i>
                         <ul>
                             <li>Landlord signed the documents </li>
                             <li>May have some additional statements by the landlord, read the whole contract carefully again & resign again</li>
                         </ul>
                     </li>
                     <!-- 6. Submit deposit within 24hours -->
-                    <li><i class="steps-ol-heading highlight">Submit deposit within 24hours after offer accepted</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Submit deposit within 24hours after offer accepted</i>
                         <ul>
                         <li class="procedures-different">If your bank is <b>different from</b> the brokerage’s:
                         <br><mark class="highlight-blue"><b> A) Wire transfer</b> </mark> (Money transfer between different banks) <b>(fee $15)</b>
@@ -648,7 +655,7 @@
                         </ul>
                     </li>
                     <!-- 7. Offer Secured -->
-                    <li><i class="steps-ol-heading highlight">Offer Secured</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Offer Secured</i>
                         <p>proof:
                             <ul>
                                 <li class="highlight-blue">Final lease document (4 Forms signed combined)</li>
@@ -658,7 +665,7 @@
                         </p>
                     </li>
                     <!-- 8. Before getting keys: -->
-                    <li><i class="steps-ol-heading highlight">Before getting keys:</i>
+                    <li class="steps-ol-heading"><i class=" highlight">Before getting keys:</i>
                         <ol>
                             <li><u>Pay Key Deposit to Landlord</u>
                                 <ul> 
@@ -686,9 +693,9 @@
                         <br>
                             <li><u> Registration & Move-in elevator booking with the Condo Management (through email)</u>
                                 <ul>
-                                    <li>Registration Form</li>
-                                    <li>Passport photos </li>
-                                    <li>Final lease document</li>
+                                    <li class="highlight-blue">Registration Form</li>
+                                    <br><li class="highlight-blue">Passport photos </li>
+                                    <br><li class="highlight-blue">Final lease document</li>
                                 </ul>
                             </li>
                         <br>
@@ -705,7 +712,7 @@
                         </ol>
                     </li>
                     <!-- 9. FIrst Day of Moving In, CHECK : -->
-                    <li><i class="steps-ol-heading highlight">First Day of Moving In, CHECK:</i>
+                    <li class="steps-ol-heading"><i class=" highlight">First Day of Moving In, CHECK:</i>
                         <ul>
                             <li>all appliances working or not</li>
                             <li>anythings broken?
@@ -717,7 +724,7 @@
                         <p>→ take pictures and report to the landlord immediately to protect yourself from compensation</p>
                     </li>
                     <!-- 10. DONE -->
-                    <li><i class="steps-ol-heading highlight">DONE👍🏻</i></li>
+                    <li class="steps-ol-heading"><i class=" highlight">DONE👍🏻</i></li>
                 </ol>
             </div>
         </section>
@@ -751,8 +758,32 @@
              </div>
         </div>
     </section>
-
     </div>
+
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="footer__img-container">
+            <img src="../../../../utilis-images/logo.png" alt="logo" class="footer__logo">
+        </div>
+        <h3 class="footer__description">Hope you find our website useful <br> 
+            We love to know more about each of you who living in here</h3>
+        <div class="footer__contact">
+            <h2 class="footer__contact-title">CONTACT US</h2>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <p>gmail</p>
+            </div>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
+                style="fill:#FFFFFF;">
+                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                </svg> 
+                <p>ig</p> 
+            </div>
+        </div>
+    </section>
 
     <script src="main.js"></script>
     <script src="../../../../utlilis.js"></script>

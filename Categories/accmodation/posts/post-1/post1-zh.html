@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Prata&display=swap" rel="stylesheet">
     <!-- stylesheets -->
     <link rel="stylesheet" href="../../../../utilis-style-sheets/modern-normalize.css" />
     <link rel="stylesheet" href="../../../../utilis-style-sheets/style.css" />
@@ -15,10 +19,13 @@
     <link rel="stylesheet" href="../style/RentBA+Popular.css">
     <link rel="stylesheet" href="../style/hero.css">
     <link rel="stylesheet" href="../style/related-post.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/footer.css">
     <link rel="stylesheet" href="../../../../utilis-style-sheets/utilis.css">
-    <title>住咩好? 多倫多租屋攻略</title>
+    <meta name="description" content="係加拿大住邊到？如何租屋？幾錢租金？對於沒有資本、車和房的人，又有什麼選擇呢？我們想分享我們的經驗，簡單介紹多倫多的住屋選擇、
+    成本比較和香港人常租的地方。最後，我們會詳細講解如何租住Condo，提供一步一步的指引，希望能給大家參考。">
     <meta name="keywords" content="多倫多租屋攻略, 多倫多租樓注意事項, 多倫多租樓全過程, 
     多倫多住咩好, 多倫多租樓推介">
+    <title>住咩好? 多倫多租屋攻略</title>
 </head>
 <body>
      <!-- header -->
@@ -32,7 +39,7 @@
                         <option value="en">English</option>
                     </select>
                   </div>
-                <button class="header__btn">
+                <!-- <button class="header__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
                         <path fill="#f78f8f"
                             d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
@@ -42,7 +49,7 @@
                         </path>
                         <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
                     </svg>
-                </button>
+                </button> -->
                 <button class="header__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 40 40">
                         <path fill="#8585cc"
@@ -93,58 +100,62 @@
                 </button>
             </div>
         </header>
+        
+        <!-- navigation bar -->
         <nav class="nav__menu container">
             <div class="nav__menu-left">
-                <div class="item-shopping">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/shopping.jpg" alt="icon of shopping">
-                    <a href="#shopping">購</a>
+                    <a href="../../../shopping/shopping-menu/shopping-menu-zh.html">購</a>
                 </div>
-                <div class="item-food">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/food.jpeg" alt="icon of food">
-                    <a href="#food">食</a>
+                    <a href="../../../food/food-menu/food-menu-zh.html">食</a>
                 </div>
-                <div class="item-accomodation">
-                    <img src="../../../../utilis-images/accomodation.jpeg" alt="icon of accomodation">
-                    <a href="#accomodation">住</a>
+                <div class="nav__item">
+                    <img src="../../../../utilis-images/accomodation.jpeg" alt="icon of accommodation">
+                    <a href="../../../accmodation/accomdation-menu/accomodation-menu-zh.html">住</a>
                 </div>
-                <div class="item-transportation">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/transportation.jpeg" alt="icon of transportation">
-                    <a href="#transportation">行</a>
+                    <a href="../../../transportation/transportation-menu/transportation-menu-zh.html">行</a>
                 </div>
             </div>
             <div class="nav__menu-right">
-                <div class="item-entertainment">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/entertainment.jpeg" alt="icon of entertainment">
-                    <a href="#entertainment">樂</a>
+                    <a href="../../../entertainment/entertainment-menu/entertainment-menu-zh.html">樂</a>
                 </div>
-                <div class="item-work">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/study&work.jpeg" alt="icon of study & work">
-                    <a href="#work">學習&工作</a>
+                    <a href="../../../study & work/study&work-menu/study&work-menu-zh.html">學習&工作</a>
                 </div>
-                <div class="item-saving">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/saving.jpeg" alt="icon of saving">
-                    <a href="#saving">慳錢小貼士</a>
+                    <a href="../../../$saving tips/$saving-menu/$saving-menu-zh.html">慳錢小貼士</a>
                 </div>
-                <div class="item-others">
+                <div class="nav__item">
                     <img src="../../../../utilis-images/others.jpeg" alt="icon of others">
-                    <a href="#others">其它</a>
+                    <a href="../../../others/others-menu/others-menu-zh.html">其它</a>
                 </div>
     
             </div>
         </nav>
     </div>
 
-     <!-- mobile nav -->
+    <!-- mobile nav -->
     <nav id="mobile-nav">
         <ul class="mobile-nav__menu">
-            <li><a class="mobile-nav__link" href="#">購</a></li>
-            <li><a class="mobile-nav__link" href="#">食</a></li>
-            <li><a class="mobile-nav__link" href="#">住</a></li>
-            <li><a class="mobile-nav__link" href="#">行</a></li>
-            <li><a class="mobile-nav__link" href="#">樂</a></li>
-            <li><a class="mobile-nav__link" href="#">學習&工作</a></li>
-            <li><a class="mobile-nav__link" href="#">慳錢小貼士</a></li>
-            <li><a class="mobile-nav__link" href="#">其它</a></li>
+            <h2>Categories</h2>
+            <div class="line"></div>
+            <li><a class="mobile-nav__link" href="../../../shopping/shopping-menu/shopping-menu-zh.html">購</a></li>
+            <li><a class="mobile-nav__link" href="../../../food/food-menu/food-menu-zh.html">食</a></li>
+            <li><a class="mobile-nav__link" href="../../../accmodation/accomdation-menu/accomodation-menu-zh.html">住</a></li>
+            <li><a class="mobile-nav__link" href="../../../transportation/transportation-menu/transportation-menu-zh.html">行</a></li>
+            <li><a class="mobile-nav__link" href="../../../entertainment/entertainment-menu/entertainment-menu-zh.html">樂</a></li>
+            <li><a class="mobile-nav__link" href="../../../study & work/study&work-menu/study&work-menu-zh.html">學習&工作</a></li>
+            <li><a class="mobile-nav__link" href="../../../$saving tips/$saving-menu/$saving-menu-zh.html">慳錢小貼士</a></li>
+            <li><a class="mobile-nav__link" href="../../../others/others-menu/others-menu-zh.html">其它</a></li>
         </ul>
     </nav>
 
@@ -167,7 +178,7 @@
         <section class="table-of-content">
             <div class="TOC-icon-heading-container">
                 <img class="TOC-icon" src="../../../../utilis-images/leef.jpeg" alt="maple icon">
-                <h2 class="TOC-title">Table of Content</h2>
+                <h2 class="TOC-title">目錄</h2>
             </div>
             <ul>
                 <li>
@@ -477,7 +488,6 @@
                         </li>
                     </ul>
                 </li>
-                <br>
                 <li>康樂設備 (gym room, swimming pool etc.)</li>
                 <li>俾唔俾養寵物/食煙</li>
                 <li>樓齡
@@ -491,7 +501,7 @@
 
         <!-- B. 租屋前有咩要準備？ -->
         <div class="procedures__prepare-container" id="prepare">
-            <h3 class="heading">租之前有咩要準備？</h3>
+            <h3 class="heading">B. 租之前有咩要準備？</h3>
             <ul>
                 <li>本地電話號碼</li>
                 <li>本地銀行戶口</li>
@@ -508,17 +518,17 @@
         <div class="how-website-container">
             <h4><u>Suggeseted website:</u></h4>
             <ul>
-                <li class="highlight-blue">Conda.ca (with agent)</li>
-                <br><li class="highlight-blue">Rentals.ca</li>
-                <br><li class="highlight-blue">Realtor.ca</li>
+                <li><b class="highlight-blue">Conda.ca</b> (有agent)</li>
+                <li><b class="highlight-blue">Rentals.ca</b></li>
+                <li><b class="highlight-blue">Realtor.ca</b> (有agent) - 加拿大房地產協會（CREA）旗下的網站</li>
             </ul>
         </div>
         <div class="how-steps-container">
-            <h4>步驟:</h3>
+            <h4><u>步驟:</u></h4>
             <ol>
-                <li><i class="steps-ol-heading highlight">Save低所有想睇嘅樓</i></li>
+                <li class="steps-ol-heading"><i class="highlight">Save低所有想睇嘅樓</i></li>
                 <!-- 2. Contact agent to book a viewing -->
-                <li><i class="steps-ol-heading highlight">通知agent想睇樓 (需要24小時前通知)</i>
+                <li class="steps-ol-heading"><i class="highlight">通知agent想睇樓 (需要24小時前通知)</i>
                     <br>*一定要睇樓, 風險: 
                     <ul>
                         <li>設備齊全？有冇損爛？</li>
@@ -528,7 +538,7 @@
                     </ul>
                 </li>
                 <!-- 3. Make an offer -->
-                <li> <i class="steps-ol-heading highlight">Make an offer</i></li>
+                <li class="steps-ol-heading"><i class="highlight">Make an offer</i></li>
                     <ul>
                         <li>要填一份 Rental Application Form 俾Agent to draft an offer</li>
                             <ul>
@@ -545,9 +555,7 @@
                                 <li><div class="highlight-blue">Residential Tenancy Agreement</div>
                                     <br>&nbsp;&nbsp;(主要關於租金)</li>
                             </ul>
-
-                            <br>💡小貼士：
-                            <li>
+                            <li>💡小貼士：
                                 當你簽咗份form後 + landlord接受你既offer, Forms = 就係有法律效力嘅contract
                             </li>
                                 <ul>
@@ -575,7 +583,7 @@
                     </ul>
                 </li>
                 <!-- 4. Wait for Landlord accept your offer -->
-                <li> <i class="steps-ol-heading highlight">等業主接受你嘅offer</i>
+                <li class="steps-ol-heading"><i class="highlight">等業主接受你嘅offer</i>
                     <ul>
                         <li>業主有24小時去考慮</li>
                         <li>可能會reject你嘅offer, 因為佢哋可能有其它更好嘅offer。</li>
@@ -585,14 +593,14 @@
                     </ul>
                 </li>
                 <!-- 5. Offer accepted -->
-                <li><i class="steps-ol-heading highlight">Offer accepted</i>
+                <li class="steps-ol-heading"><i class="highlight">Offer accepted</i>
                     <ul>
                         <li>業主簽documents </li>
                         <li>業主可能有其他要求而修訂咗份contract, 所以要重睇一次同重新簽名。</li>
                     </ul>
                 </li>
                 <!-- 6. Submit deposit within 24hours -->
-                <li><i class="steps-ol-heading highlight">SOffer被接受後，24小時內需支付訂金</i>
+                <li class="steps-ol-heading"><i class="highlight">Offer被接受後，24小時內需支付訂金</i>
                     <ul>
                     <li class="procedures-different">如果你嘅銀行<b>不同</b>於上市公司，可使用：
                     <br><mark class="highlight-blue"><b> A) 電匯 Wire transfer</b> </mark> (Money transfer between different banks) <b>(手續費$15)</b>
@@ -606,7 +614,7 @@
                     </ul>
                 </li>
                 <!-- 7. Offer Secured -->
-                <li><i class="steps-ol-heading highlight">Offer Secured</i>
+                <li class="steps-ol-heading"><i class="highlight">Offer Secured</i>
                     <p>證明租住成功文件:
                         <ul>
                             <li class="highlight-blue">Final lease document (4 Forms signed combined)</li>
@@ -615,7 +623,7 @@
                     </p>
                 </li>
                 <!-- 8. Before getting keys: -->
-                <li><i class="steps-ol-heading highlight">Before getting keys:</i>
+                <li class="steps-ol-heading"><i class="highlight">Before getting keys:</i>
                     <ol>
                         <li><u>要支付鎖匙押金 Key Deposit 比業主</u>
                             <ul> 
@@ -643,9 +651,9 @@
                     <br>
                         <li><u>同Condo Management辦理入住手續&book𨋢搬傢俬 (through Email)</u>
                             <ul>
-                                <li>Registration Form</li>
-                                <li>Passport photos</li>
-                                <li>Final lease document</li>
+                                <li class="highlight-blue">Registration Form</li>
+                                <br><li class="highlight-blue">Passport photos</li>
+                                <br><li class="highlight-blue">Final lease document</li>
                             </ul>
                         </li>
                     <br>
@@ -662,7 +670,7 @@
                     </ol>
                 </li>
                 <!-- 9. FIrst Day of Moving In, CHECK : -->
-                <li><i class="steps-ol-heading highlight">入住當日，CHECK:</i>
+                <li class="steps-ol-heading"><i class="highlight">入住當日，CHECK:</i>
                     <ul>
                         <li>所有設備有冇問題</li>
                         <li>有冇野爛咗？
@@ -675,7 +683,7 @@
                     <p>→ 如果有問題，即刻影相通知業主，避免要賠錢。</p>
                 </li>
                 <!-- 10. DONE -->
-                <li><i class="steps-ol-heading">DONE👍🏻</i></li>
+                <li class="steps-ol-heading"><i class="highlight">DONE👍🏻</i></li>
             </ol>
         </div>
     </section>
@@ -709,8 +717,32 @@
              </div>
         </div>
     </section>
-
     </div>
+
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="footer__img-container">
+            <img src="../../../../utilis-images/logo.png" alt="logo" class="footer__logo">
+        </div>
+        <h3 class="footer__description">Hope you find our website useful <br> 
+            We love to know more about each of you who living in here</h3>
+        <div class="footer__contact">
+            <h2 class="footer__contact-title">CONTACT US</h2>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <p>gmail</p>
+            </div>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
+                style="fill:#FFFFFF;">
+                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                </svg> 
+                <p>ig</p> 
+            </div>
+        </div>
+    </section>
 
     <script src="main.js"></script>
     <script src="../../../../utlilis.js"></script>

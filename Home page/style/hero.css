@@ -21,16 +21,9 @@
     padding: var(--size-base);
     border: 1px solid green;
     text-align: center;
-    max-width: 100ch;
+    max-width: 80ch;
     font-size: var(--size-2xl);
     font-weight: 700;
-}
-
-.mission{
-    max-width: 55ch;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
 }
 
 .hero-title{

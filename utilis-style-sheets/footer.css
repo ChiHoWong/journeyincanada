@@ -17,7 +17,7 @@
 .footer__logo{
     margin: 0 auto;
     max-width: 20rem;
-    max-height: 20rem;
+    max-height: 15rem;
 }
 
 .footer__description{
@@ -93,9 +93,6 @@
   
 /* xs */
 @media (max-width: 475px) {
-    .footer{
-        font-size: var(--size-xxs);
-    }
 
     .footer__logo{
         max-width: 8rem;
