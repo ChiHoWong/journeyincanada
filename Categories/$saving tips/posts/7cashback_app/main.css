@@ -1,0 +1,73 @@
+.h3{
+    margin: var(--size-sm) 0;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+table{
+    margin-top: var(--size-xxs);
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+
+th, td{
+    border: 2px solid black;
+    padding: var(--size-xxs);
+    max-width: 100ch;
+  }
+
+.swagbucks-images{
+    display: flex;
+}
+
+.section-container{
+  margin-top: var(--size-base);
+}
+
+.youtube{
+  position: relative;
+      width: 80%;
+      height: 20rem;
+      overflow: hidden;
+}
+
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.highlight{
+  background-color: var(--clr-orange);
+}
+
+.highlight-green{
+  display: inline-block;
+  background-color: var(--clr-highlight-green);
+}
+
+.highlight-table-blue{
+  background-color: var(--clr-table-blue);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+  
+/* lg */
+@media (max-width: 1024px) {}
+  
+/* md */
+@media (max-width: 768px) {}
+  
+/* sm */
+@media (max-width: 640px) {
+
+}
+  
+/* xs */
+@media (max-width: 475px) {}

@@ -7,9 +7,9 @@
 .header {
     background-color: var(--clr-red);
     display: flex;
-    padding: 0.5rem;
+    padding: 0.3rem;
     align-items: center;
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
 }
 
 .header-home{
@@ -52,7 +52,7 @@
 /* lg */
 @media (max-width: 1024px) {
     .header{
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
     }
 }
   

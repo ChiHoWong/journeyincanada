@@ -1,0 +1,26 @@
+.body {
+    overflow-x: hidden;
+  }
+
+  p{
+    font-size: var(--size-lg);
+  }
+  
+  .hero-container{
+    flex: 1;
+    margin: 0 var(--size-2xl);
+    max-width: 120ch;
+  }
+  
+  .article-container{
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  .heading{
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--clr-heading-blue);
+    text-decoration: underline;
+    padding-top: var(--size-2xl);
+    margin-bottom: var(--size-sm);
+    font-weight: 900;
+  }
