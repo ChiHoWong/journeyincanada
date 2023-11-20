@@ -1,10 +1,6 @@
 .body {
     overflow-x: hidden;
   }
-
-  p{
-    font-size: var(--size-lg);
-  }
   
   .hero-container{
     flex: 1;
@@ -12,8 +8,9 @@
     max-width: 120ch;
   }
   
-  .article-container{
+  .hero-container{
     font-family: 'Noto Sans', sans-serif;
+    font-size: var(--size-lg);
   }
   
   .heading{
@@ -24,3 +21,30 @@
     margin-bottom: var(--size-sm);
     font-weight: 900;
   }
+
+  
+  /* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+  
+/* lg */
+@media (max-width: 1024px) {}
+  
+/* md */
+@media (max-width: 768px) {
+  .hero-container{
+    font-size: var(--size-base);
+  }
+}
+  
+/* sm */
+@media (max-width: 640px) {}
+  
+/* xs */
+@media (max-width: 475px) {
+  .hero-container{
+    font-size: var(--size-sm);
+  }
+}
