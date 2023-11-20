@@ -31,7 +31,6 @@
 /* options */
 .options{
   margin-top: var(--size-base);
-  font-size: var(--size-lg);
 }
 
 table{
@@ -53,7 +52,6 @@ li {
 /* Comparison */
 .Comparison{
   margin-top: var(--size-base);
-  font-size: var(--size-lg);
 }
 
 .Comparison-title{
@@ -67,7 +65,6 @@ li {
 /* procedures */
 .procedures{
   margin-top: var(--size-3xl);
-  font-size: var(--size-lg);
 }
 
 .procedures__prepare-container{
@@ -106,19 +103,7 @@ li {
 @media (max-width: 1280px) {}
   
 /* lg */
-@media (max-width: 1024px) {
-  .options{
-    font-size: var(--size-base);
-  }
-
-  .Comparison{
-    font-size: var(--size-base);
-}
-
-  .procedures{
-    font-size: var(--size-base);
-  }
-}
+@media (max-width: 1024px) {}
   
 /* md */
 @media (max-width: 768px) {
@@ -128,32 +113,12 @@ li {
 }
   
 /* sm */
-@media (max-width: 640px) {
-  .hero__heading{
-    font-size: var(--size-2xl)
-  }
-
-  .options{
-    font-size: var(--size-sm);
-  }
-
-  .Comparison{
-    font-size: var(--size-sm);
-}
-
-  .procedures{
-    font-size: var(--size-sm);
-  }
-}
+@media (max-width: 640px) {}
   
 /* xs */
 @media (max-width: 475px) {
   li {
     margin-top: var(--size-xxs);
-  }
-
-  .hero__heading{
-    font-size: var(--size-xl)
   }
 
   .th, td{
@@ -163,14 +128,6 @@ li {
 
   ul, ol {
     padding-left: var(--size-sm);
-  }
-  
-  .article-container{
-    font-size: var(--size-xs);
-  }
-
-  .options{
-    font-size: var(--size-xs);
   }
 
   .options__options-TvsH{
@@ -184,12 +141,7 @@ li {
   }
 
   .Comparison{
-    font-size: var(--size-xs);
     overflow-x: auto;
     max-width: 100%;
-  }
-
-  .procedures{
-    font-size: var(--size-xs);
   }
 }
