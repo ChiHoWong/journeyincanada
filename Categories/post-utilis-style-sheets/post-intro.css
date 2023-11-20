@@ -1,9 +1,9 @@
-.heading__img{
+/* .heading__img{
     margin: var(--size-base) 0;
     height: 45vh;
     width: 60vw;
     border: 2px solid var(--clr-yellow);
-  }
+  } */
   
 .heading-container{
   margin-left: var(--size-base);
