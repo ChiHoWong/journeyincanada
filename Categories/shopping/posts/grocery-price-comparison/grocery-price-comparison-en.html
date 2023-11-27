@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QN50YFVJQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0QN50YFVJQ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/modern-normalize.css" />
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/style.css" />
+    <link rel="stylesheet" href="../../../post-utilis-style-sheets/post-utilis.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/mobile-menu.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/header.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/nav.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/path.css">
+    <link rel="stylesheet" href="../../../post-utilis-style-sheets/post-hero-related-container.css">
+    <link rel="stylesheet" href="../../../post-utilis-style-sheets/post-intro.css">
+    <link rel="stylesheet" href="../grocery-price-comparison/main.css">
+    <link rel="stylesheet" href="../../../post-utilis-style-sheets/post-related-post.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/footer.css">
+    <link rel="stylesheet" href="../../../../utilis-style-sheets/utilis.css">
+    <meta name="description" content="Do you ever wonder which supermarket sells grocery products at 
+    the cheapest price? We’re going to compare some common products, across 6 well-known 
+    local supermarkets: No Frills, Freshco, Food Basics, Metro, Loblaws, and 
+    Walmart. We will create the same shopping list for each store and calculate 
+    the total cost at the end to provide a comparison of supermarket prices.">
+    <meta name="keywords" content="">
+    <title>Toronto Grocery Stores/ supermarkets price comparison</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="sticky-container">
+        <header class="header container">
+            <a class="header-home" href="../../../../index.html">
+                <h2 class="header__title">HOME</h2>
+            </a>
+            <div class="header__btn-container">
+                <div class="header__language-selector">
+                    <select id="language" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="zh">繁體中文</option>
+                    </select>
+                </div>
+                <!-- <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
+                        <path fill="#f78f8f"
+                            d="M37.625,28.838c-0.378,1.96-1.985,3.453-3.97,3.733c-3.119,0.467-7.817,0.928-13.677,0.928 c-5.765,0-10.558-0.533-13.772-1c-1.985-0.28-3.592-1.773-3.97-3.733c-0.378-2.147-0.732-4.82-0.732-8.74s0.397-6.718,0.775-8.865 c0.378-1.96,1.985-3.453,3.97-3.733c3.119-0.467,7.912-1.053,13.772-1.053S30.485,7.033,33.699,7.5 c1.985,0.28,3.592,1.773,3.97,3.733c0.378,2.147,0.832,4.945,0.832,8.865C38.405,24.018,38.003,26.692,37.625,28.838z">
+                        </path>
+                        <path fill="#c74343"
+                            d="M20.003,7c5.815,0,10.841,0.553,14.037,1.017c1.575,0.222,2.832,1.401,3.124,2.917 C37.523,12.97,38,16.126,38,19.976c-0.106,4.38-0.569,7.576-0.833,9.075c-0.295,1.532-1.552,2.71-3.136,2.934 C31.991,32.29,26.538,33,20.003,33c-6.121,0-11.42-0.637-14.037-1.017c-1.575-0.222-2.832-1.401-3.124-2.917 C2.503,27.147,2.1,24.016,2.1,20s0.403-7.147,0.738-9.051c0.295-1.532,1.552-2.71,3.136-2.934C8.015,7.71,13.467,7,20.003,7 M20.003,6C14.143,6,8.945,6.56,5.826,7.027C3.841,7.307,2.234,8.8,1.856,10.76C1.478,12.907,1.1,16.08,1.1,20 s0.378,7.093,0.756,9.24c0.378,1.96,1.985,3.453,3.97,3.733C9.039,33.44,14.237,34,20.003,34c5.86,0,11.058-0.56,14.177-1.027 c1.985-0.28,3.592-1.773,3.97-3.733C38.527,27.093,38.905,23.92,39,20c0-3.92-0.473-7.093-0.851-9.24 c-0.378-1.96-1.985-3.453-3.97-3.733C30.966,6.56,25.863,6,20.003,6L20.003,6z">
+                        </path>
+                        <polygon fill="#fff" points="16,26 16,14 27,20"></polygon>
+                    </svg>
+                </button> -->
+                <a href="https://www.instagram.com/hkcouplediariesincanada/" target="_blank"><button
+                        class="header__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
+                            <path fill="#8585cc"
+                                d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z">
+                            </path>
+                            <path fill="#8d8dd8"
+                                d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z">
+                            </path>
+                            <path fill="#bd82f4"
+                                d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z">
+                            </path>
+                            <path fill="#ed73f4"
+                                d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z">
+                            </path>
+                            <path fill="#f97dcd"
+                                d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z">
+                            </path>
+                            <path fill="#fc9c95"
+                                d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z">
+                            </path>
+                            <path fill="#ffac99"
+                                d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z">
+                            </path>
+                            <path fill="#ffc49c"
+                                d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z">
+                            </path>
+                            <path fill="#ffde8d"
+                                d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z">
+                            </path>
+                            <path fill="#fff69f"
+                                d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z">
+                            </path>
+                            <path fill="#8b75a1"
+                                d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z">
+                            </path>
+                            <path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"></path>
+                            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                                d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"></path>
+                            <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                                d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z">
+                            </path>
+                        </svg>
+                    </button></a>
+                <button id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- navigation bar -->
+        <nav class="nav__menu container">
+            <div class="nav__menu-left">
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/shopping.webp">
+                        <source type="image/jpg" srcset="../../../../utilis-images/shopping.jpg">
+                        <img src="../../../../utilis-images/shopping.jpg" alt="icon of shopping">
+                    </picture>
+                    <a href="../../../shopping/shopping-menu/shopping-menu-en.html">Shopping</a>
+                </div>
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/food.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/food.jpeg">
+                        <img src="../../../../utilis-images/food.jpeg" alt="icon of food">
+                    </picture>
+                    <a href="../../../food/food-menu/food-menu-en.html">Food</a>
+                </div>
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/accomodation.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/accomodation.jpeg">
+                        <img src="../../../../utilis-images/accomodation.jpeg" alt="icon of accommodation">
+                    </picture>
+                    <a href="../../../accmodation/accomdation-menu/accomdation-menu-en.html">accommodation</a>
+                </div>
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/transportation.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/transportation.jpeg">
+                        <img src="../../../../utilis-images/transportation.jpeg" alt="icon of transportation">
+                    </picture>
+                    <a href="../../../transportation/transportation-menu/transportation-menu-en.html">Transportation</a>
+                </div>
+            </div>
+            <div class="nav__menu-right">
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/entertainment.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/entertainment.jpeg">
+                        <img src="../../../../utilis-images/entertainment.jpeg" alt="icon of entertainment">
+                    </picture>
+                    <a href="../../../entertainment/entertainment-menu/entertainment-menu-en.html">Entertainment</a>
+                </div>
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/study&work.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/study&work.jpeg">
+                        <img src="../../../../utilis-images/study&work.jpeg" alt="icon of studywork">
+                    </picture>
+                    <a href="../../../studywork/study&work-menu/study&work-menu-en.html">Study Work</a>
+                </div>
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/saving.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/saving.jpeg">
+                        <img src="../../../../utilis-images/saving.jpeg" alt="icon of saving">
+                    </picture>
+                    <a href="../../../$saving tips/$saving-menu/$saving-menu-en.html">$Saving Tips</a>
+                </div>
+                <div class="nav__item">
+                    <picture>
+                        <source type="image/webp" srcset="../../../../utilis-images/others.webp">
+                        <source type="image/jpeg" srcset="../../../../utilis-images/others.jpeg">
+                        <img src="../../../../utilis-images/others.jpeg" alt="icon of others">
+                    </picture>
+                    <a href="../../../others/others-menu/others-menu-en.html">Others</a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- mobile nav -->
+    <nav id="mobile-nav">
+        <ul class="mobile-nav__menu">
+            <h2>Categories</h2>
+            <div class="line"></div>
+            <li><a class="mobile-nav__link" href="../../../shopping/shopping-menu/shopping-menu-en.html">Shopping</a>
+            </li>
+            <li><a class="mobile-nav__link" href="../../../food/food-menu/food-menu-en.html">Food</a></li>
+            <li><a class="mobile-nav__link"
+                    href="../../../accmodation/accomdation-menu/accomdation-menu-en.html">accommodation</a></li>
+            <li><a class="mobile-nav__link"
+                    href="../../../transportation/transportation-menu/transportation-menu-en.html">Transportation</a>
+            </li>
+            <li><a class="mobile-nav__link"
+                    href="../../../entertainment/entertainment-menu/entertainment-menu-en.html">Entertainment</a></li>
+            <li><a class="mobile-nav__link" href="../../../studywork/study&work-menu/study&work-menu-en.html">Study
+                    Work</a></li>
+            <li><a class="mobile-nav__link" href="../../../$saving tips/$saving-menu/$saving-menu-en.html">$Saving
+                    Tips</a></li>
+            <li><a class="mobile-nav__link" href="../../../others/others-menu/others-menu-en.html">Others</a></li>
+        </ul>
+    </nav>
+
+    <!-- path -->
+    <div class="path container">
+        <a href="../../../../index.html">Home</a> >
+        <a href="../../../shopping/shopping-menu/shopping-menu-en.html">Shopping</a>
+        > Toronto Grocery Stores/ Supermarkets price comparison
+    </div>
+
+
+    <!-- title -->
+    <div class="hero-related-container container">
+
+        <div class="hero-container">
+            <h1 class="hero__heading">Toronto Grocery Stores/ Supermarkets price comparison</h1>
+            <picture>
+                <source type="image/webp" srcset="../grocery-price-comparison/images/heading-img/heading-img-rec.webp">
+                <img class="heading__img" src="../grocery-price-comparison/images/heading-img/heading-img-rec.png" alt="image of this article">
+            </picture>
+
+            <!-- table of content -->
+            <section class="table-of-content">
+                <div class="TOC-icon-heading-container">
+                    &nbsp;<img class="TOC-icon" src="../../../../utilis-images/leaf.png" alt="maple icon">
+                    <h2 class="TOC-title">Table of Content</h2>&nbsp;
+                </div>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#Shopping-list">Shoppin List</a></li>
+                    <li>Price</li>
+                        <ul>
+                            <li><a href="#Fruits">Fruits & vegetables</a></li>
+                            <li><a href="#Meat">Meat</a></li>
+                            <li><a href="#Seafood">Seafood</a></li>
+                            <li><a href="#Dairy">Dairy product</a></li>
+                            <li><a href="#Seasoning">Seasoning</a></li>
+                            <li><a href="#Rice">Carbs</a></li>
+                            <li><a href="#Daily">Daily necessities</a></li>
+                        </ul>
+                    <li><a href="#Comparison">Total Price Comparison</a></li>
+                    <li><a href="#Conclusion">Conclusion</a></li>
+                </ul>
+            </section>
+
+            <!-- article container -->
+            <article class="article-container container">
+
+                <!-- intro -->
+                <section class="intro-container" id="intro">
+                    <h2 class="heading">Introduction</h2>
+                    <p>
+                        Do you ever wonder which supermarket sells grocery products at 
+                        the cheapest price? We’re going to compare some common products, 
+                        either with the lowest price or from a common brand, across 6 well-known 
+                        local supermarkets: No Frills, Freshco, Food Basics, Metro, Loblaws, and 
+                        Walmart. We will create the same shopping list for each store and calculate 
+                        the total cost at the end to provide a comparison of supermarket prices.
+                    </p>
+                </section>
+
+                <!-- Shopping list -->
+                <section class="intro-container" id="Shopping-list">
+                    <h2 class="heading">Shopping List:</h2>
+                    <div class="Shopping-list-container">
+                        <p class="Shopping-list-flex">
+                            <a href="#Banana">1. Banana</a>
+                            <br><a href="#Orange">2. Orange</a>
+                            <br><a href="#Broccoli">3. Broccoli</a>
+                            <br><a href="#Lettuce">4. Lettuce iceberg</a>
+                            <br><a href="#Cabbage">5. Cabbage</a>
+                            <br><a href="#Tomato">6. Tomato</a>
+                            <br><a href="#Garlic">7. Garlic</a>
+                            <br><a href="#Ginger">8. Ginger</a>
+                            <br><a href="#Chicken">9. Chicken - Drumsticks</a>
+                            <br><a href="#Pork">10. Pork - Loin Centre Chop</a>
+                            <br><a href="#Beef">11. Beef - Striploin Steak</a>
+                            <br><a href="#Shrimp">12. Frozen Shrimp</a>
+                            <br><a href="#Fish">13. Frozen Tilapia fish</a>
+                            <br><a href="#Eggs">14. Eggs</a>
+                            <br><a href="#Milk">15. Milk - 2% skimmed</a>
+                        </p>
+                        <p class="Shopping-list-flex">
+                                <a href="#Oil">16. Oil</a>
+                            <br><a href="#Soy">17. Soy sauce - Lee Kum Kee</a>
+                            <br><a href="#Rice">18. Rice - Jasmine rice</a>
+                            <br><a href="#Spaghetti">19. Spaghetti</a>
+                            <br><a href="#Pizza">20. Pizza - Giuseppe</a>
+                            <br><a href="#Bodywash">21. Body Wash - Dove</a>
+                            <br><a href="#Shampoo">22. Shampoo - Tresemme</a>
+                            <br><a href="#Pads">23. Pads - Always Ultra thin Size 4</a>
+                            <br><a href="#Tissues">24. Facial Tissues</a>
+                            <br><a href="#Paper">25. Toilet Paper</a>
+                            <br><a href="#Toothpaste">26. Toothpaste - Colgate Cavity Protection</a>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Fruits & vegetables  -->
+                <section class="section-container" id="Fruits">
+                    <h2 class="heading">Fruits & vegetables</h2>
+
+                    <!-- bananas -->
+                    <h3 class="h3" id="Banana">Banana</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bananas/No-bananas.jpg" alt="price of bananas from Nofrills">
+                            <p class="highlight-green">0.59/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bananas/Ba-bananas.jpg" alt="price of bananas from Foodbasic">
+                            <p class="highlight-green">0.59/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bananas/Co-bananas.jpg" alt="price of bananas from Freshco">
+                            <p class="highlight-green">0.59/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bananas/Me-bananas.jpg" alt="price of bananas from Metro">
+                            <p>0.69/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bananas/Lo-bananas.jpg" alt="price of bananas from Loblaws">
+                            <p>0.69/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bananas/Wal-bananas.jpg" alt="price of bananas from Walmart">
+                            <p class="highlight-red">0.97/lb</p>
+                        </div>
+                    </div>
+
+                    <!-- orange -->
+                    <h3 class="h3" id="Orange">Orange</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/orange/No-orange.jpg" alt="price of orange from Nofrills">
+                            <p>1.99/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/orange/Ba-orange.jpg" alt="price of orange from Foodbasic">
+                            <p>5.98/3lb (1.99/lb)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/orange/Co-orange.jpg" alt="price of orange from Freshco">
+                            <p class="highlight-green">1.79/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/orange/Me-orange.jpg" alt="price of orange from Metro">
+                            <p class="highlight-red">2.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/orange/Low-orange.jpg" alt="price of orange from Loblaws">
+                            <p class="highlight-red">2.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/orange/Wal-orange.jpg" alt="price of orange from Walmart">
+                            <p>1.97/lb</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Broccoli -->
+                    <h3 class="h3" id="Broccoli">Broccoli</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/broccoli/No-broccoli.jpg" alt="price of broccoli from Nofrills">
+                            <p class="highlight-green">1.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/broccoli/Ba-broccoli.jpg" alt="price of broccoli from Foodbasic">
+                            <p>2.98</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/broccoli/Co-broccoli.jpg" alt="price of broccoli from Freshco">
+                            <p>2.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/broccoli/Me-broccoli.jpg" alt="price of broccoli from Metro">
+                            <p class="highlight-green">1.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/broccoli/Lo-broccoli.jpg" alt="price of broccoli from Loblaws">
+                            <p class="highlight-red">3.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/broccoli/Wal-broccoli.jpg" alt="price of broccoli from Walmart">
+                            <p>2.97</p>
+                        </div>
+                    </div>
+
+                    <!-- Lettuce -->
+                    <h3 class="h3" id="Lettuce">Lettuce iceberg</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/lettuce/No-lettuce.jpg" alt="price of lettuce from Nofrills">
+                            <p>2.98</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/lettuce/Ba-lettuce.jpg" alt="price of lettuce from Foodbasic">
+                            <p>2.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/lettuce/Co-lettuce.jpg" alt="price of lettuce from Freshco">
+                            <p class="highlight-green">2.49</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/lettuce/Me-lettuce.jpg" alt="price of lettuce from Metro">
+                            <p>2.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/lettuce/lo-lettuce.jpg" alt="price of lettuce from Loblaws">
+                            <p class="highlight-red">3.49</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/lettuce/Wal-lettuce.jpg" alt="price of lettuce from Walmart">
+                            <p>2.97</p>
+                        </div>
+                    </div>
+
+                    <!-- Cabbage -->
+                    <h3 class="h3" id="Cabbage">Cabbage</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/cabbage/No-cabbage.jpg" alt="price of Cabbage from Nofrills">
+                            <p>1.29/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/cabbage/Ba-cabbage.jpg" alt="price of Cabbage from Foodbasic">
+                            <p>1.48/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/cabbage/Co-cabbage.jpg" alt="price of Cabbage from Freshco">
+                            <p>1.29/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/cabbage/Me-cabbage.jpg" alt="price of Cabbage from Metro">
+                            <p class="highlight-red">1.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/cabbage/Lo-cabbage.jpg" alt="price of Cabbage from Loblaws">
+                            <p class="highlight-red">1.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/cabbage/Wal-cabbage.jpg" alt="price of Cabbage from Walmart">
+                            <p class="highlight-green">0.88/lb</p>
+                        </div>
+                    </div>
+
+                    <!-- Tomato  -->
+                    <h3 class="h3" id="Tomato">Tomato</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tomato/No-tomato.jpg" alt="price of Tomato from Nofrills">
+                            <p>1.99/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tomato/Ba-tomato.jpg" alt="price of Tomato from Foodbasic">
+                            <p class="highlight-red">5.09 (2.98 lb)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tomato/Co-tomato.jpg" alt="price of Tomato from Freshco">
+                            <p>1.99/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tomato/Me-tomato.jpg" alt="price of Tomato from Metro">
+                            <p>2.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tomato/Lo-tomato.jpg" alt="price of Tomato from Loblaws">
+                            <p>2.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tomato/Wal-tomato.jpg" alt="price of Tomato from Walmart">
+                            <p class="highlight-green">1.97/lb</p>
+                        </div>
+                    </div>
+
+                    <!-- Garlic -->
+                    <h3 class="h3" id="Garlic">Garlic</h3>
+                    <div class="table-container" id="#Garlic">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/garlic/No-garlic.jpg" alt="price of Garlic from Nofrills">
+                            <p>0.99/3 (0.33)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/garlic/Ba-garlic.jpg" alt="price of Garlic from Foodbasic">
+                            <p>1.88/5 (0.376)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/garlic/Co-garlic.jpg" alt="price of Garlic from Freshco">
+                            <p>1.49/5 (0.50)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/garlic/Me-garlic.jpg" alt="price of Garlic from Metro">
+                            <p class="highlight-red">3.99/2 (2)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/garlic/Lo-garlic.jpg" alt="price of Garlic from Loblaws">
+                            <p>1.49/3 (0.50)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/garlic/Wal-garlic.jpg" alt="price of Garlic from Walmart">
+                            <p class="highlight-green">0.97/3 (0.32)</p>
+                        </div>
+                    </div>
+
+                    <!-- Ginger -->
+                    <h3 class="h3" id="Ginger">Ginger</h3>
+                    <div class="table-container" id="#Ginger">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/ginger/No-ginger.jpg" alt="price of Ginger from Nofrills">
+                            <p>2.99/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/ginger/Ba-ginger.jpg" alt="price of Ginger from Foodbasic">
+                            <p>2.98/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/ginger/Co-ginger.jpg" alt="price of Ginger from Freshco">
+                            <p>3.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/ginger/Me-ginger.jpg" alt="price of Ginger from Metro">
+                            <p>3.99/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/ginger/Low-ginger.jpg" alt="price of Ginger from Loblaws">
+                            <p class="highlight-red">4.49/lb</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/ginger/Wal-ginger.jpg" alt="price of Ginger from Walmart">
+                            <p class="highlight-green">2.97/lb</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Meat -->
+                <section class="section-container">
+                    <h2 class="heading">Meat</h2>
+
+                    <!-- chicken drumsticks -->
+                    <h3 class="h3" id="Chicken">Chicken - Drumsticks</h3>
+                    <div class="table-container" >
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/chicken/No-chicken.jpg" alt="price of Chicken Drumsticks from Nofrills">
+                            <p>9.17/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/chicken/Ba-chicken.jpg" alt="price of Chicken Drumsticks from Foodbasic">
+                            <p>7.69/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/chicken/Co-chicken.jpg" alt="price of Chicken Drumsticks from Freshco">
+                            <p class="highlight-green">5.05/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/chicken/Me-chicken.jpg" alt="price of Chicken Drumsticks from Metro">
+                            <p>5.49/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/chicken/Lo-chicken.jpg" alt="price of Chicken Drumsticks from Loblaws">
+                            <p class="highlight-red">9.31/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/chicken/Wal-chicken.jpg" alt="price of Chicken Drumsticks from Walmart">
+                            <p>7.64/kg</p>
+                        </div>
+                    </div>
+
+                    <!-- Pork -->
+                    <h3 class="h3" id="Pork">Pork - Loin Centre Chop</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pork/No-pork.jpg" alt="price of Pork from Nofrills">
+                            <p>14.31/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pork/Ba-pork.jpg" alt="price of Pork from Foodbasic">
+                            <p>14.31/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pork/Co-pork.jpg" alt="price of Pork from Freshco">
+                            <p>12/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pork/Me-pork.jpg" alt="price of Pork from Metro">
+                            <p class="highlight-green">7.69/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pork/Lo-pork.jpg" alt="price of Pork from Loblaws">
+                            <p class="highlight-red">17.62/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pork/Wal-pork.jpg" alt="price of Pork from Walmart">
+                            <p>12.06/kg</p>
+                        </div>
+                    </div>
+
+                    <!-- Steak -->
+                    <h3 class="h3" id="Beef">Beef - Striploin Steak</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/steak/No-steak.jpg" alt="price of steak from Nofrills">
+                            <p>27.98/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/steak/Ba-steak.jpg" alt="price of steak from Foodbasic">
+                            <p>39.66/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/steak/Co-steak.jpg" alt="price of steak from Freshco">
+                            <p>40.29/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/steak/Me-steak.jpg" alt="price of steak from Metro">
+                            <p class="highlight-green">26.43/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/steak/Lo-steak.jpg" alt="price of steak from Loblaws">
+                            <p class="highlight-red">41.87/kg</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/steak/Wal-steak.jpg" alt="price of steak from Walmart">
+                            <p>35.21/kg</p>
+                        </div>
+                    </div>
+                </section>
+
+                    
+                <!-- Seafood -->
+                <section class="section-container">
+                    <h2 class="heading">Seafood</h2>
+
+                    <!-- Shrimp -->
+                    <h3 class="h3" id="Shrimp">Frozen Shrimp</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shrimp/No-shrimp.jpg" alt="price of Shrimp from Nofrills">
+                            <p>6.99 (2.33/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shrimp/Ba-shrimp.jpg" alt="price of Shrimp from Foodbasic">
+                            <p>10.99 (2/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shrimp/Co-shrimp.jpg" alt="price of Shrimp from Freshco">
+                            <p>5.99 (2/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shrimp/Me-shrimp.jpg" alt="price of Shrimp from Metro">
+                            <p>9.99 (2.94/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shrimp/Low-shrimp.jpg" alt="price of Shrimp from Loblaws">
+                            <p class="highlight-red">12.49(3.12/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shrimp/Wal-shrimp.jpg" alt="price of Shrimp from Walmart">
+                            <p class="highlight-green">9.97 (1.66/100g)</p>
+                        </div>
+                    </div>
+
+                    <!-- Fish  -->
+                    <h3 class="h3" id="Fish">Frozen Tilapia fish</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/fish/No-fish.jpg" alt="price of Frozen Tilapia fish from Nofrills">
+                            <p>8.89 (0.88/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/fish/Ba-fish.jpg" alt="price of Frozen Tilapia fish from Foodbasic">
+                            <p class="highlight-green">7.99 (0.59/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/fish/Co-fish.jpg" alt="price of Frozen Tilapia fish from Freshco">
+                            <p>10 (0.735/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/fish/Me-fish.jpg" alt="price of Frozen Tilapia fish from Metro">
+                            <p class="highlight-red">fillet: 14.99 (2/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/fish/Lo-fish.jpg" alt="price of Frozen Tilapia fish from Loblaws">
+                            <p>6.68 (0.66/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/fish/Wal-fish.jpg" alt="price of Frozen Tilapia fish from Walmart">
+                            <p>fillet: 12.97 (1.73/100g)</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Dairy product -->
+                <section class="section-container">
+                    <h2 class="heading">Dairy product</h2>
+
+                    <!-- egg -->
+                    <h3 class="h3" id="Eggs">Eggs</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/egg/No-egg.jpg" alt="price of Eggs from Nofrills">
+                            <p class="highlight-green">3.59 (0.3/unit)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/egg/Ba-egg.jpg" alt="price of Eggs from Foodbasic">
+                            <p class="highlight-green">3.59 (0.3/unit)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/egg/Co-egg.jpg" alt="price of Eggs from Freshco">
+                            <p>3.69 (0.31/unit)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/egg/Me-egg.jpg" alt="price of Eggs from Metro">
+                            <p class="highlight-green">3.59 (0.3/unit)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/egg/Low-egg.jpg" alt="price of Eggs from Loblaws">
+                            <p class="highlight-red">3.89 (0.32/unit)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/egg/Wal-egg.jpg" alt="price of Eggs from Walmart">
+                            <p>3.78 (0.315/unit)</p>
+                        </div>
+                    </div>
+
+                    <!-- milk -->
+                    <h3 class="h3" id="Milk">Milk - 2% skimmed</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/milk/No-milk.jpg" alt="price of Milk from Nofrills">
+                            <p>5.89 (0.15/ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/milk/Ba-milk.jpg" alt="price of Milk from Foodbasic">
+                            <p>5.89 (0.15/ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/milk/Co-milk.jpg" alt="price of Milk from Freshco">
+                            <p>5.89 (0.15/ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/milk/Me-milk.jpg" alt="price of Milk from Metro">
+                            <p>5.89 (0.15/ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/milk/Lo-milk.jpg" alt="price of Milk from Loblaws">
+                            <p>5.89 (0.15/ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/milk/Wal-milk.jpg" alt="price of Milk from Walmart">
+                            <p>5.89 (0.15/ml)</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Seasoning -->
+                <section class="section-container">
+                    <h2 class="heading">Seasoning</h2>
+
+                    <!-- Oil -->
+                    <h3 class="h3" id="Oil">Oil</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/oil/No-oil.jpg" alt="price of Oil from Nofrills">
+                            <p>10.99 (0.39/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/oil/Ba-oil.jpg" alt="price of Oil from Foodbasic">
+                            <p class="highlight-green">10.49 (0.35/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/oil/Co-oil.jpg" alt="price of Oil from Freshco">
+                            <p>11.79 (0.39/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/oil/Me-oil.jpg" alt="price of Oil from Metro">
+                            <p>10.49 (0.35/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/oil/Lo-oil.jpg" alt="price of Oil from Loblaws">
+                            <p>12.99 (0.43/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/oil/Wal-oil.jpg" alt="price of Oil from Walmart">
+                            <p class="highlight-red">12.97 (0.46/100ml)</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Soy Sauce -->
+                    <h3 class="h3" id="Soy">Soy Sauce - Lee Kum Kee</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/soy/No-soy.jpg" alt="price of Soy Sauce from Nofrills">
+                            <p class="highlight-green">2.49 (0.50/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/soy/Ba-soy.jpg" alt="price of Soy Sauce from Foodbasic">
+                            <p>2.99 (0.6/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/soy/Co-soy.jpg" alt="price of Soy Sauce from Freshco">
+                            <p class="highlight-red">2.99 (0.6/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/soy/Me-soy.jpg" alt="price of Soy Sauce from Metro">
+                            <p>selection 2.29 (0.51/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/soy/Lo-soy.jpg" alt="price of Soy Sauce from Loblaws">
+                            <p class="highlight-green">2.49 (0.50/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/soy/Wal-soy.jpg" alt="price of Soy Sauce from Walmart">
+                            <p>2.97 (0.59/100ml)</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Carbs -->
+                <section class="section-container">
+                    <h2 class="heading">Carbs</h2>
+
+                    <!-- Rice -->
+                    <h3 class="h3" id="Rice">Rice - Jasmine rice</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/rice(normal)/No-rice.jpg" alt="price of Rice from Nofrills">
+                            <p>19.99 (0.25/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/rice(normal)/Ba-rice.jpg" alt="price of Rice from Foodbasic">
+                            <p>25.99 (0.32/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/rice(normal)/Co-rice.jpg" alt="price of Rice from Freshco">
+                            <p>24.99 (0.31/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/rice(normal)/Me-rice.jpg" alt="price of Rice from Metro">
+                            <p></p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/rice(normal)/Low-rice.jpg" alt="price of Rice from Loblaws">
+                            <p></p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/rice(normal)/Wal-rice.jpg" alt="price of Rice from Walmart">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <!-- Spaghetti -->
+                    <h3 class="h3" id="Spaghetti">Spaghetti</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/spaghetti/No-spaghetti.jpg" alt="price of Spaghetti from Nofrills">
+                            <p>2.29 (0.25/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/spaghetti/Ba-spaghetti.jpg" alt="price of Spaghetti from Foodbasic">
+                            <p class="highlight-green">1.99 (0.22/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/spaghetti/Co-spaghetti.jpg" alt="price of Spaghetti from Freshco">
+                            <p>2.29 (0.25/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/spaghetti/Me-spaghetti.jpg" alt="price of Spaghetti from Metro">
+                            <p>2.49 (0.28/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/spaghetti/Lo-spaghetti.jpg" alt="price of Spaghetti from Loblaws">
+                            <p>2.49 (0.28/100g)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/spaghetti/Wal-spaghetti.jpg" alt="price of Spaghetti from Walmart">
+                            <p class="highlight-red">2.67 (0.36/100g)</p>
+                        </div>
+                    </div>
+
+                    <!-- Pizza -->
+                    <h3 class="h3" id="Pizza">Pizza - Giuseppe</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pizza/No-pizza.jpg" alt="price of Pizza from Nofrills">
+                            <p>6.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pizza/Ba-pizza.jpg" alt="price of Pizza from Foodbasic">
+                            <p>6.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pizza/Co-pizza.jpg" alt="price of Pizza from Freshco">
+                            <p>6.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pizza/Me-pizza.jpg" alt="price of Pizza from Metro">
+                            <p>6.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pizza/Lo-pizza.jpg" alt="price of Pizza from Loblaws">
+                            <p>6.99</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/pizza/Wal-pizza.jpg" alt="price of Pizza from Walmart">
+                            <p>6.99</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Daily necessities -->
+                <section class="section-container">
+                    <h2 class="heading">Daily necessities</h2>
+
+                    <!-- Bodywash -->
+                    <h3 class="h3" id="Bodywash">Body Wash - Dove</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bodywash/No-bodywash.jpg" alt="price of Body Wash from Nofrills">
+                            <p>9.99 (1.69/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bodywash/Ba-bodywash.jpg" alt="price of Body Wash from Foodbasic">
+                            <p>9.49 (1.61/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bodywash/Co-bodywash.jpg" alt="price of Body Wash from Freshco">
+                            <p>6.49 (2/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bodywash/Me-bodywash.jpg" alt="price of Body Wash from Metro">
+                            <p class="highlight-red">11.29 (1.91/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bodywash/Lo-bodywash.jpg" alt="price of Body Wash from Loblaws">
+                            <p>9.99 (1.69/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/bodywash/Wal-bodywash.jpg" alt="price of Body Wash from Walmart">
+                            <p class="highlight-green">9.27 (1.57/100ml)</p>
+                        </div>
+                    </div>
+
+                    <!-- Shampoo -->
+                    <h3 class="h3" id="Shampoo">Shampoo - Tresemme</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shampoo(normal)/No-shampoo(normal).jpg" alt="price of Shampoo from Nofrills">
+                            <p>6.99 (0.844/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shampoo(normal)/Ba-shampoo.jpg" alt="price of Shampoo from Foodbasic">
+                            <p>6.99 (0.844/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shampoo(normal)/Co-shampoo(normal).jpg" alt="price of Shampoo from Freshco">
+                            <p class="highlight-green">6.79 (0.82/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shampoo(normal)/Me-shampoo(normal).jpg" alt="price of Shampoo from Metro">
+                            <p class="highlight-red">7.99 (0.97/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shampoo(normal)/Low-shampoo(normal).jpg" alt="price of Shampoo from Loblaws">
+                            <p class="highlight-red">7.99 (0.97/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/shampoo(normal)/Wal-shampoo.jpg" alt="price of Shampoo from Walmart">
+                            <p>6.97 (0.842/100ml)</p>
+                        </div>
+                    </div>
+
+                    <!-- Pads -->
+                    <h3 class="h3" id="Pads">Pads - Always Ultra thin Size 4</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/M/No-m.jpg" alt="price of Pads from Nofrills">
+                            <p>10.49/26 (0.40 un)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/M/Ba-m.jpg" alt="price of Pads from Foodbasic">
+                            <p class="highlight-green">5.49/16 (0.34 un)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/M/Co-m.jpg" alt="price of Pads from Freshco">
+                            <p>9.99/26 (0.38un)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/M/Me-m.jpg" alt="price of Pads from Metro">
+                            <p class="highlight-red">10.99/26 (0.42 un)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/M/Lo-m.jpg" alt="price of Pads from Loblaws">
+                            <p class="highlight-green">5.49/16 (0.34 un)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/M/Wal-m.jpg" alt="price of Pads from Walmart">
+                            <p>9.98/26 (0.38 un)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Tissues in boxes -->
+                    <h3 class="h3" id="Tissues">Facial Tissues</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/boxtissue/No-boxtissue.jpg" alt="price of Tissues in Boxes from Nofrills">
+                            <p class="highlight-green">4.99/6 (0.83/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/boxtissue/Ba-boxtissue.jpg" alt="price of Tissues in Boxes from Foodbasic">
+                            <p>6.99/6 (0.92/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/boxtissue/Co-boxtissue.jpg" alt="price of Tissues in Boxes from Freshco">
+                            <p>9.99/6 (1.32/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/boxtissue/Me-boxtissue.jpg" alt="price of Tissues in Boxes from Metro">
+                            <p>11.99/6 (1.59/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/boxtissue/Low-boxtissue.jpg" alt="price of Tissues in Boxes from Loblaws">
+                            <p class="highlight-red">12.99/6 (1.72/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/boxtissue/Wal-boxtissue.jpg" alt="price of Tissues in Boxes from Walmart">
+                            <p>12.97/12 (0.86/100 sheet)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Toilet Paper -->
+                    <h3 class="h3" id="Paper">Toilet Paper</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tissue/No-tissue.jpg" alt="price of Toilet Paper from Nofrills">
+                            <p>12.99/30 (0.18/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tissue/Ba-tissue.jpg" alt="price of Toilet Paper from Foodbasic">
+                            <p>6.99/24 (0.22/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tissue/Co-tissue.jpg" alt="price of Toilet Paper from Freshco">
+                            <p class="highlight-green">19.99/30 (0.16/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tissue/Me-tissue.jpg" alt="price of Toilet Paper from Metro">
+                            <p>15.99/30 (0.26/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tissue/Lo-tissue.jpg" alt="price of Toilet Paper from Loblaws">
+                            <p class="highlight-red">24.99/30 (0.34/100 sheet)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/tissue/Wal-tissue.jpg" alt="price of Toilet Paper from Walmart">
+                            <p>18.47/24 (0.32/100 sheet)</p>
+                        </div>
+                    </div>
+
+                    <!-- Toothpaste -->
+                    <h3 class="h3" id="Toothpaste">Toothpaste - Colgate Cavity Protection</h3>
+                    <div class="table-container">
+                        <div class="column-container">
+                            <h4>Nofrills</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/toothpaste/No-toothpaste.jpg" alt="price of Toothpaste from Nofrills">
+                            <p>2.49 (1.66/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Foodbasic</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/toothpaste/Ba-toothpaste.jpg" alt="price of Toothpaste from Foodbasic">
+                            <p>1.49/95ml (1.57/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Freshco</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/toothpaste/Co-toothpaste.jpg" alt="price of Toothpaste from Freshco">
+                            <p>1.69 (1.78/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Metro</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/toothpaste/Me-toothpaste.jpg" alt="price of Toothpaste from Metro">
+                            <p>1.79/95ml (1.88/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Loblaws</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/toothpaste/Lo-toothpaste.jpg" alt="price of Toothpaste from Loblaws">
+                            <p class="highlight-red">2.29 (1.91/100ml)</p>
+                        </div>
+                        <div class="column-container">
+                            <h4>Walmart</h4>
+                            <img class="flex-img" src="../grocery-price-comparison/images/toothpaste/Wal-toothpaste.jpg" alt="price of Toothpaste from Walmart">
+                            <p class="highlight-green">0.88 (1.47/100ml)</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Total Price Comparison -->
+                <h2 class="heading">Total Price Comparison</h2>
+                <picture>
+                    <source type="image/webp" srcset="../grocery-price-comparison/images/overall-comparison/total-price-comparison.webp">
+                    <img src="../grocery-price-comparison/images/overall-comparison/total-price-comparison.jpg" alt="Summary of all the products price from each grocery store">
+                </picture>
+                <br>
+                <img src="../grocery-price-comparison/images/overall-comparison/categories-price-comparison.jpg" alt="Summary of all the products price by Categories from each grocery store">
+
+
+                <!-- Conclusion  -->
+                <h2 class="heading">Conclusion </h2>
+                <p>The cheapest supermarket: FreshCo; The most expensive supermarket: Loblaws
+                    <br>
+                    <br>(Cheapest to most expensive)
+                    <br>#1 FreshCo
+                    <br>#2 Food Basics
+                    <br>#3 Nofrills
+                    <br>#4 Walmart
+                    <br>#5 Metro
+                    <br>#6 Walmart
+                    <br>
+                    <br>For Fruits & Vegetables, 
+                    <br>The cheapest supermarket: Nofrills; The most expensive supermarket: Loblaws
+                    <br>
+                    <br>For Meat,
+                    <br>The cheapest supermarket: Metro; The most expensive supermarket: Loblaws
+                    <br>
+                    <br>For Seafood,
+                    <br>The cheapest supermarket: Food Basics; The most expensive supermarket: Metro
+                    <br>
+                    <br>For Dairy Product,
+                    <br>The cheapest supermarket: Food Basics, Nofrills & Metro; The most expensive supermarket: Loblaws
+                    <br>
+                    <br>For Seasoning,
+                    <br>The cheapest supermarket: Metro; The most expensive supermarket: Walmart
+                    <br>
+                    <br>For Carbs,
+                    <br>The cheapest supermarket: Walmart; The most expensive supermarket: Metro
+                    <br>
+                    <br>For Daily Necessities,
+                    <br>The cheapest supermarket: Nofrills; The most expensive supermarket: Loblaws
+                    <br>
+                    <br><u>Our Personal Preference</u>
+                    <br>We used to buy groceries except meat from <strong>Nofrills</strong> which is next to our home. We buy meat from 
+                    <strong>Metro</strong> as it is a lot cheaper than the other supermarket. For the daily necessities, we used to buy them from 
+                    <strong>Walmart</strong>because it offer more choices than other supermarket. Even though it is not the cheapest, they have flyers
+                    every week for certain daily necessities which can reduce the cost and become even more cheaper than other supermarket. 
+                    <br>
+                    <br>We hope this post can help provide you a brief overview of the supermarket prices!                     
+                </p>
+
+
+            </article>
+        </div>
+
+        <!-- related post -->
+        <section class="related">
+            <div class="about">
+                <h3 class="about-title">About Us</h3>
+                <img class="about-icon" src="../../../../utilis-images/icon-us.PNG" alt="">
+                <p class="about-description">Weclome to our page. We are a pair of young couple from Hong Kong.
+                    Hope you find our website useful.
+                </p>
+            </div>
+            <div class="related__post">
+                <h3 class="related-title">Related Post</h3>
+                <div class="related__box-container">
+                    <div class="related__box">
+                        <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                        <p class="related__box-description">Coming soon</p>
+                    </div>
+                    <div class="related__box">
+                        <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                        <p class="related__box-description">Coming soon</p>
+                    </div>
+                    <div class="related__box">
+                        <!-- <img src="" alt="" class="latest__box-img">pic</img> -->
+                        <p class="related__box-description">Coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <br>
+    <!-- Footer -->
+    <section class="footer container">
+        <div class="footer__img-container">
+            <picture>
+                <source type="image/webp" srcset="../../../../utilis-images/logo.webp">
+                <source type="image/png" srcset="../../../../utilis-images/logo.png">
+                <img src="../../../../utilis-images/logo.png" alt="logo" class="footer__logo">
+            </picture>
+        </div>
+        <h3 class="footer__description">Hope you find our website useful <br> 
+            We love to know more about each of you who living in here</h3>
+        <div class="footer__contact">
+            <h2 class="footer__contact-title">CONTACT US</h2>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <p>hkcouplediariesincanada@gmail.com</p>
+            </div>
+            <div class="footer__contact-info-container">
+                <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50"
+                style="fill:#FFFFFF;">
+                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                </svg> 
+                <p>hkcouplediariesincanada</p> 
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="../../../../utlilis.js"></script>
+</body>
+
+</html>
