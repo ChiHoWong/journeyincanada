@@ -42,7 +42,7 @@ table{
 th, td{
   border: 2px solid black;
   padding: var(--size-xxs);
-  width: 60ch;
+  max-width: 60ch;
 }
 
 li {
@@ -114,6 +114,18 @@ li {
   
 /* sm */
 @media (max-width: 640px) {
+  .options__options-table-TvsH td{
+    min-width: 40ch;
+  }
+
+  .hero__options-table-AvsC td{
+    min-width: 40ch;
+  }
+
+  .Comparison-table td{
+    min-width: 15ch;
+  }
+
   .options__options-TvsH{
     overflow-x: auto;
     max-width: 100%;
