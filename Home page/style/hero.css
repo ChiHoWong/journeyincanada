@@ -1,7 +1,7 @@
 /* hero */
 .hero {
     font-family: 'Anek Kannada', sans-serif;
-    background-image: url(../images/hero-background-xl.jpeg);
+    background-image: url(../images/hero-background.jpg);
     background-size: cover;
     height: 55rem;
     background-position: center;
@@ -46,9 +46,6 @@
 
 /* xl */
 @media (max-width: 1280px) {
-    .hero{
-          background-image: url(../images/hero-background-lg.jpeg);
-    }   
 }
   
 /* lg */

@@ -22,6 +22,9 @@
 }
 
 .latest__box-title{
+    justify-content: center;
+    font-size: var(--size-base);
+    height: 5.5rem;
     color: var(--clr-coffee);
     border-bottom: 2px solid var(--clr-yellow);
 }
@@ -132,10 +135,12 @@ a:hover{
 /* sm */
 @media (max-width: 640px) {
     .latest__title{
-        padding: var(--size-base);
+        height: 0;
     }
 
     .latest__box-container{
+        padding-top: var(--size-xl);
+
         grid-template-areas: 
         'post1' 
         'post2'
@@ -147,6 +152,9 @@ a:hover{
         grid-template-columns: none;
     }
 
+    .latest__box-title{
+        height: auto;
+    }
     
 }
   

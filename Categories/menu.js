@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollRightButton = document.querySelector(".arrow-right");
 
     scrollLeftButton.addEventListener("click", function () {
-        scrollContainer.scrollLeft -= 100; // Adjust the scroll distance as needed
+        scrollContainer.scrollLeft -= 350; // Adjust the scroll distance as needed
         changeButtonPosition();
     });
 
     scrollRightButton.addEventListener("click", function () {
-        scrollContainer.scrollLeft += 100; // Adjust the scroll distance as needed
+        scrollContainer.scrollLeft += 350; // Adjust the scroll distance as needed
         changeButtonPosition();       
     });
 

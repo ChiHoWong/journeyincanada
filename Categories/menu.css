@@ -31,7 +31,8 @@
     position: relative;
     display: flex;
     gap: var(--size-3xl);
-    overflow: hidden;
+    max-width: 100%;
+    overflow: auto;
     border-top: 5px solid var(--clr-orange);
     border-bottom: 5px solid var(--clr-orange);
     margin: var(--size-4xl);
@@ -45,13 +46,13 @@
 
 .category-box-img{
     height: 18rem;
-    width: 25rem;
+    width: 30rem;
     border: 2px solid var(--clr-yellow);
 }
 
 .category-box-description{
     height: 18rem;
-    width: 25rem;
+    width: 30rem;
     border: 2px solid var(--clr-yellow);
 }
 
@@ -88,13 +89,13 @@
 
     .category-box-img{
         height: 11rem;
-        width: 22rem;
+        width: 24rem;
     }
 
     .category-box-description{
         padding: var(--size-sm);
         height: 14rem;
-        width: 22rem;
+        width: 24rem;
     }
 }
   
