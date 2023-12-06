@@ -67,10 +67,26 @@
 }
   
 /* md */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .highlight-green{
+        padding: 0 var(--size-xs);
+    }
+    
+    .highlight-red{
+        padding: 0 var(--size-xs);
+    }
+}
   
 /* sm */
 @media (max-width: 640px) {}
   
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+    .highlight-green{
+        padding: 0 var(--size-xxs);
+    }
+    
+    .highlight-red{
+        padding: 0 var(--size-xxs);
+    }
+}
