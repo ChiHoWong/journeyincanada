@@ -29,10 +29,6 @@
     border-bottom: 2px solid var(--clr-yellow);
 }
 
-.latest__box-img{
-    width: 100%;
-}
-
 a{
     transition: opacity 0.3s ease;
 }

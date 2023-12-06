@@ -2,6 +2,7 @@
 
 .nav__menu {
     display: flex;
+    justify-content: space-around;
     font-size: var(--size-xl);
     color: var(--clr-coffee);
     padding: var(--size-xxs);
@@ -15,6 +16,16 @@
     align-items: center;
 }
 
+.nav__menu-left{
+    gap: var(--size-xs);
+    justify-content: center;
+}
+
+.nav__menu-right{
+    gap: var(--size-xs);
+    justify-content: center;
+}
+
 .nav__menu a {
     text-decoration: none;
     color: var(--clr-coffee);
@@ -24,18 +35,6 @@
     width: 2rem;
     height: 2rem;
     object-fit: cover;
-}
-
-.nav__menu-left{
-    flex: 1;
-    justify-content: center;
-    
-    
-}
-
-.nav__menu-right{
-    flex: 1;
-    justify-content: center;
 }
 
 .nav__item a:hover {
