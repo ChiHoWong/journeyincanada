@@ -1,0 +1,49 @@
+table{
+    margin-top: var(--size-xxs);
+    border: 2px solid var(--clr-silver);
+    border-collapse: collapse;
+  }
+
+th, td{
+    border: 2px solid var(--clr-silver);
+    padding: var(--size-xxs);
+    max-width: 100ch;
+  }
+
+  .youtube{
+    position: relative;
+        width: 80%;
+        height: 20rem;
+        overflow: hidden;
+  }
+  
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+  
+/* lg */
+@media (max-width: 1024px) {}
+  
+/* md */
+@media (max-width: 768px) {}
+  
+/* sm */
+@media (max-width: 640px) {
+  .table-container{
+    max-width: 100%; 
+    overflow-x: auto;
+  }
+}
+  
+/* xs */
+@media (max-width: 475px) {}

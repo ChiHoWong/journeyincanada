@@ -6,12 +6,12 @@
 
 table{
     margin-top: var(--size-xxs);
-    border: 2px solid black;
+    border: 2px solid var(--clr-silver);
     border-collapse: collapse;
   }
 
 th, td{
-    border: 2px solid black;
+    border: 2px solid var(--clr-silver);
     padding: var(--size-xxs);
     max-width: 100ch;
   }
