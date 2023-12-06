@@ -84,4 +84,8 @@
     .hero{
         height: 35rem;
     }   
+
+    .hero__container{
+        font-size: var(--size-xs);
+    }
 }
