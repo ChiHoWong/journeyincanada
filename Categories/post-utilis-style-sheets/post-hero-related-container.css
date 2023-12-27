@@ -13,13 +13,16 @@
 /* lg */
 @media (max-width: 1024px) {
 }
-  
-/* md */
-@media (max-width: 768px) {
+
+@media (max-width: 900px) {
     .hero-related-container{
         display: inline;
         margin-top: var(--size-lg);
     }
+}
+
+/* md */
+@media (max-width: 768px) {
 }
   
 /* sm */
