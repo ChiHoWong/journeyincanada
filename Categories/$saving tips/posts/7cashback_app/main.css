@@ -4,15 +4,7 @@
     text-decoration: underline;
 }
 
-table{
-    margin-top: var(--size-xxs);
-    border: 2px solid var(--clr-silver);
-    border-collapse: collapse;
-  }
-
 th, td{
-    border: 2px solid var(--clr-silver);
-    padding: var(--size-xxs);
     max-width: 100ch;
   }
 
@@ -37,19 +29,6 @@ th, td{
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.highlight{
-  background-color: var(--clr-orange);
-}
-
-.highlight-green{
-  display: inline-block;
-  background-color: var(--clr-highlight-green);
-}
-
-.highlight-table-blue{
-  background-color: var(--clr-table-blue);
 }
 
 /* 2xl */

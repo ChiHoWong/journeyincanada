@@ -19,10 +19,37 @@
   font-weight: 900;
 }
 
+table{
+  margin-top: var(--size-xxs);
+  border: 2px solid var(--clr-silver);
+  border-collapse: collapse;
+}
+
+th, td{
+  border: 2px solid var(--clr-silver);
+  padding: var(--size-xxs);
+}
+
 .heading__img{
   max-width: 85%;
 }
 
+.highlight{
+  background-color: var(--clr-orange);
+}
+
+.highlight-green{
+  display: inline-block;
+  background-color: var(--clr-highlight-green);
+}
+
+.highlight-table-blue{
+  background-color: var(--clr-table-blue);
+}
+
+.clr-red{
+  color: red;
+}
   
   /* 2xl */
 @media (max-width: 1536px) {}
